@@ -1,0 +1,28 @@
+{
+  "archives": [
+    {
+      "file": "kernel-headers.tar.gz",
+      "sha256": "473ba4289f86eed5376defaca8e792db4b757ed62c3d8ea6ad9bec6de36dfd3d",
+      "entries": 12093,
+      "symref_files": [],
+      "symtypes_files": []
+    },
+    {
+      "file": "modules_prepare_outdir.tar.gz",
+      "sha256": "f3fd15b9c74dc25e5fb350cb80c1691e5e2673a7356b2c8c65eefdb11d622ce1",
+      "entries": 4503,
+      "symref_files": [],
+      "symtypes_files": []
+    }
+  ],
+  "phase4_result_zip_sha256": "48b9533a1b0fee8ee0fedafa99381e42c778e01c04c9b033b7695764908ebef2",
+  "candidate_symtypes_sha256": "2becac6e954237b85623974a857e89397b5458328757dfaa1e110ec9e6c44236",
+  "target_symtypes": [
+    "unuse_swap_pte extern int unuse_swap_pte ( s#vm_area_struct * , t#pmd_t * , unsigned long , t#swp_entry_t , s#folio * ) ",
+    "add_swap_extent int add_swap_extent ( s#swap_info_struct * , unsigned long , unsigned long , t#sector_t ) ",
+    "page_swap_info extern s#swap_info_struct * page_swap_info ( s#page * ) ",
+    "__page_file_index extern unsigned long __page_file_index ( s#page * ) "
+  ],
+  "candidate_genksyms_output": "#SYMVER nr_swap_pages 0xa0d3456d\n#SYMVER unuse_swap_pte 0x440b776b\n#SYMVER add_swap_extent 0x2a731aba\n#SYMVER si_swapinfo 0xec13c83c\n#SYMVER page_swap_info 0xb7074429\n#SYMVER swapcache_mapping 0x83fc1643\n#SYMVER __page_file_index 0x39ba4984\n",
+  "limitation": "No OEM preprocessor input, symtypes, symref or exact build command recovered; absence in candidate archives does not establish absence in OEM build."
+}

@@ -1,0 +1,160 @@
+{
+  "image_sha256": "dd875f16a86fd08cdd68903766573a33c08426afd69b4ab2efbcade1ec15922f",
+  "btf_sha256": "80a145adb8665abc5fc495250843144f5b006caf43c62a080ea34ca8fa0079bb",
+  "functions": [
+    {
+      "id": 50157,
+      "name": "__contpte_try_fold",
+      "kind": 12,
+      "size_or_type": 50156,
+      "prototype": "fn(*4:mm_struct,1:unsigned long,*8:pte_t,8:pte_t)->void"
+    },
+    {
+      "id": 50158,
+      "name": "contpte_convert",
+      "kind": 12,
+      "size_or_type": 50156,
+      "prototype": "fn(*4:mm_struct,1:unsigned long,*8:pte_t,8:pte_t)->void"
+    },
+    {
+      "id": 50161,
+      "name": "__contpte_try_unfold",
+      "kind": 12,
+      "size_or_type": 50156,
+      "prototype": "fn(*4:mm_struct,1:unsigned long,*8:pte_t,8:pte_t)->void"
+    },
+    {
+      "id": 50163,
+      "name": "contpte_ptep_get",
+      "kind": 12,
+      "size_or_type": 50162,
+      "prototype": "fn(*8:pte_t,8:pte_t)->8:pte_t"
+    },
+    {
+      "id": 50165,
+      "name": "contpte_ptep_get_lockless",
+      "kind": 12,
+      "size_or_type": 50164,
+      "prototype": "fn(*8:pte_t)->8:pte_t"
+    },
+    {
+      "id": 50167,
+      "name": "contpte_set_ptes",
+      "kind": 12,
+      "size_or_type": 50166,
+      "prototype": "fn(*4:mm_struct,1:unsigned long,*8:pte_t,8:pte_t,1:unsigned int)->void"
+    },
+    {
+      "id": 50169,
+      "name": "contpte_clear_ptes",
+      "kind": 12,
+      "size_or_type": 50168,
+      "prototype": "fn(*4:mm_struct,1:unsigned long,*8:pte_t,1:unsigned int,1:int)->8:pte_t"
+    },
+    {
+      "id": 50171,
+      "name": "contpte_ptep_test_and_clear_young",
+      "kind": 12,
+      "size_or_type": 50170,
+      "prototype": "fn(*4:vm_area_struct,1:unsigned long,*8:pte_t)->1:int"
+    },
+    {
+      "id": 50172,
+      "name": "contpte_ptep_clear_flush_young",
+      "kind": 12,
+      "size_or_type": 50170,
+      "prototype": "fn(*4:vm_area_struct,1:unsigned long,*8:pte_t)->1:int"
+    },
+    {
+      "id": 50175,
+      "name": "contpte_set_wrprotects",
+      "kind": 12,
+      "size_or_type": 50174,
+      "prototype": "fn(*4:mm_struct,1:unsigned long,*8:pte_t,1:unsigned int,1:int)->void"
+    },
+    {
+      "id": 50177,
+      "name": "contpte_ptep_set_access_flags",
+      "kind": 12,
+      "size_or_type": 50176,
+      "prototype": "fn(*4:vm_area_struct,1:unsigned long,*8:pte_t,8:pte_t,1:int)->1:int"
+    },
+    {
+      "id": 65260,
+      "name": "split_dmabuf_huge_range",
+      "kind": 12,
+      "size_or_type": 49987,
+      "prototype": "fn(*4:vm_area_struct)->void"
+    },
+    {
+      "id": 65262,
+      "name": "zap_split_dmabuf_huge_pmd",
+      "kind": 12,
+      "size_or_type": 65261,
+      "prototype": "fn(*4:vm_area_struct,*8:pmd_t,1:unsigned long,8:bool,*4:folio)->void"
+    },
+    {
+      "id": 67620,
+      "name": "dmabuf_huge_remap_pfn_range",
+      "kind": 12,
+      "size_or_type": 67619,
+      "prototype": "fn(*4:vm_area_struct,1:unsigned long,1:unsigned long,1:unsigned long,8:pgprot_t,1:unsigned int)->1:int"
+    },
+    {
+      "id": 67621,
+      "name": "__split_dmabuf_huge_pmd",
+      "kind": 12,
+      "size_or_type": 65261,
+      "prototype": "fn(*4:vm_area_struct,*8:pmd_t,1:unsigned long,8:bool,*4:folio)->void"
+    },
+    {
+      "id": 67622,
+      "name": "split_dmabuf_huge_pmd_address",
+      "kind": 12,
+      "size_or_type": 66775,
+      "prototype": "fn(*4:vm_area_struct,1:unsigned long,8:bool,*4:folio)->void"
+    },
+    {
+      "id": 67623,
+      "name": "vma_adjust_dmabuf_huge",
+      "kind": 12,
+      "size_or_type": 66777,
+      "prototype": "fn(*4:vm_area_struct,1:unsigned long,1:unsigned long,1:long)->void"
+    },
+    {
+      "id": 67624,
+      "name": "__split_dmabuf_huge_range",
+      "kind": 12,
+      "size_or_type": 49987,
+      "prototype": "fn(*4:vm_area_struct)->void"
+    },
+    {
+      "id": 67625,
+      "name": "__pmd_dmabuf_huge_lock",
+      "kind": 12,
+      "size_or_type": 65268,
+      "prototype": "fn(*8:pmd_t,*4:vm_area_struct)->*8:spinlock_t"
+    },
+    {
+      "id": 67626,
+      "name": "zap_dmabuf_huge_pmd",
+      "kind": 12,
+      "size_or_type": 66704,
+      "prototype": "fn(*4:mmu_gather,*4:vm_area_struct,*8:pmd_t,1:unsigned long)->1:int"
+    },
+    {
+      "id": 67628,
+      "name": "move_dmabuf_huge_pmd",
+      "kind": 12,
+      "size_or_type": 67627,
+      "prototype": "fn(*4:vm_area_struct,1:unsigned long,1:unsigned long,*8:pmd_t,*8:pmd_t,8:bool)->8:bool"
+    },
+    {
+      "id": 67629,
+      "name": "dma_buf_hugetlb_get_unmapped_area",
+      "kind": 12,
+      "size_or_type": 65356,
+      "prototype": "fn(*4:file,1:unsigned long,1:unsigned long,1:unsigned long,1:unsigned long)->1:unsigned long"
+    }
+  ]
+}

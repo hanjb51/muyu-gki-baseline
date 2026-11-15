@@ -1,0 +1,166 @@
+{
+  "searched_at": "2026-11-15",
+  "searches": [
+    {
+      "url": "https://api.github.com/search/code?q=CONFIG_XIAOMI_DMABUF_HUGETLB&per_page=20",
+      "total": 11,
+      "incomplete": false,
+      "items": [
+        {
+          "repo": "zyl6932/vcut_lower",
+          "path": "docs/工作日志.md",
+          "sha": "da5136377c8221cda696838149cddd06baa83dd1",
+          "url": "https://github.com/zyl6932/vcut_lower/blob/4f5e6668be230c1ace7b53fb413b683f4630a741/docs/工作日志.md"
+        },
+        {
+          "repo": "gm-stuffs/xiaomi_aurora_dump",
+          "path": "ikconfig",
+          "sha": "f754707653372ecd15daf3771d09a7db2e4218f6",
+          "url": "https://github.com/gm-stuffs/xiaomi_aurora_dump/blob/b628f8351a35c890f9f5a320ac504b4c32933a3e/ikconfig"
+        },
+        {
+          "repo": "Jiovanni-dump/redmi_zorn_dump",
+          "path": "ikconfig",
+          "sha": "70051509ab5de835529d6e01bbdc052ea960dd78",
+          "url": "https://github.com/Jiovanni-dump/redmi_zorn_dump/blob/a60e54dad830c23893593a2f7114569557760108/ikconfig"
+        },
+        {
+          "repo": "gm-stuffs/xiaomi_haotian_dump",
+          "path": "ikconfig",
+          "sha": "e9812ad7c59de2e41e5ef31b370920d6cc2368f9",
+          "url": "https://github.com/gm-stuffs/xiaomi_haotian_dump/blob/a4f7c4b7b46fc138d3b75d9a8c84e03f8420d075/ikconfig"
+        },
+        {
+          "repo": "Jiovanni-dump/xiaomi_dada_dump",
+          "path": "ikconfig",
+          "sha": "55cd9254f532ff482efea295240b1c52b101e939",
+          "url": "https://github.com/Jiovanni-dump/xiaomi_dada_dump/blob/3a2e9a85ccd4ace53b96db21d0e6e8bf1cc8f699/ikconfig"
+        },
+        {
+          "repo": "xt0032rus/poco_myron_dump",
+          "path": "ikconfig",
+          "sha": "2ef1ec0245aea3100b122aff866eb4b605e90d51",
+          "url": "https://github.com/xt0032rus/poco_myron_dump/blob/0deaf71b569fd4fb4eb26be7e8caa795d3d113e1/ikconfig"
+        },
+        {
+          "repo": "Jiovanni-dump/xiaomi_pandora_dump",
+          "path": "ikconfig",
+          "sha": "a981d54e9d344859eed001025f39db16b9a545ae",
+          "url": "https://github.com/Jiovanni-dump/xiaomi_pandora_dump/blob/b3be90ee211267cc6c91a0a8c9d141ee13f6d23b/ikconfig"
+        },
+        {
+          "repo": "lingkong307/GKI_KernelSU_SUSFS4",
+          "path": "config/stock_defconfig",
+          "sha": "55cd9254f532ff482efea295240b1c52b101e939",
+          "url": "https://github.com/lingkong307/GKI_KernelSU_SUSFS4/blob/8261dd3c237e241a9cb985b4da8ad8a37a666b2f/config/stock_defconfig"
+        },
+        {
+          "repo": "wfqefwqf/share-poc-XRing-O1",
+          "path": "refs/kernel_config.txt",
+          "sha": "c660f35605f32dec9c9b819736968ca56d9de225",
+          "url": "https://github.com/wfqefwqf/share-poc-XRing-O1/blob/4f31358e5f006790145a9cbdfc49e3764bed9380/refs/kernel_config.txt"
+        },
+        {
+          "repo": "Jiovanni-dump/redmi_myron_dump",
+          "path": "ikconfig",
+          "sha": "2ef1ec0245aea3100b122aff866eb4b605e90d51",
+          "url": "https://github.com/Jiovanni-dump/redmi_myron_dump/blob/83077a51dec6c105f421590e38a9ea54661548bc/ikconfig"
+        },
+        {
+          "repo": "Jiovanni-dump/xiaomi_nezha_dump",
+          "path": "ikconfig",
+          "sha": "2ef1ec0245aea3100b122aff866eb4b605e90d51",
+          "url": "https://github.com/Jiovanni-dump/xiaomi_nezha_dump/blob/bfed9bed1d7e516f6ce273c8c766feaf532289c3/ikconfig"
+        }
+      ]
+    },
+    {
+      "url": "https://api.github.com/search/code?q=%22config%20XIAOMI_DMABUF_HUGETLB%22&per_page=20",
+      "total": 0,
+      "incomplete": false,
+      "items": []
+    },
+    {
+      "url": "https://api.github.com/search/code?q=%22contpte_convert%22%20repo%3AMiCode%2FXiaomi_Kernel_OpenSource&per_page=20",
+      "total": 0,
+      "incomplete": false,
+      "items": []
+    },
+    {
+      "url": "https://api.github.com/search/code?q=%22dmabuf_huge_remap_pfn_range%22%20repo%3AMiCode%2FXiaomi_Kernel_OpenSource&per_page=20",
+      "total": 0,
+      "incomplete": false,
+      "items": []
+    },
+    {
+      "q": "\"dmabuf_huge\" org:MiCode",
+      "url": "https://api.github.com/search/code?q=%22dmabuf_huge%22%20org%3AMiCode&per_page=10",
+      "total": 0,
+      "incomplete": false,
+      "items": [],
+      "error": false
+    },
+    {
+      "q": "\"XIAOMI_DMABUF_HUGETLB\" org:MiCode",
+      "url": "https://api.github.com/search/code?q=%22XIAOMI_DMABUF_HUGETLB%22%20org%3AMiCode&per_page=10",
+      "total": 0,
+      "incomplete": false,
+      "items": [],
+      "error": false
+    },
+    {
+      "q": "\"swapfile.symref\"",
+      "url": "https://api.github.com/search/code?q=%22swapfile.symref%22&per_page=10",
+      "total": 0,
+      "incomplete": false,
+      "items": [],
+      "error": false
+    },
+    {
+      "q": "\"__contpte_try_fold\" repo:torvalds/linux",
+      "url": "https://api.github.com/search/code?q=%22__contpte_try_fold%22%20repo%3Atorvalds%2Flinux&per_page=10",
+      "total": 2,
+      "incomplete": false,
+      "items": [
+        {
+          "repo": "torvalds/linux",
+          "path": "arch/arm64/mm/contpte.c",
+          "sha": "be78d8602e51a9462099e8244cd56f352bd3a636",
+          "url": "https://github.com/torvalds/linux/blob/23c62304dde29abe92013d85910d03a77dada35d/arch/arm64/mm/contpte.c"
+        },
+        {
+          "repo": "torvalds/linux",
+          "path": "arch/arm64/include/asm/pgtable.h",
+          "sha": "a474c9fb485ad0ec4c51063adad87575db700a04",
+          "url": "https://github.com/torvalds/linux/blob/23c62304dde29abe92013d85910d03a77dada35d/arch/arm64/include/asm/pgtable.h"
+        }
+      ],
+      "error": false
+    },
+    {
+      "q": "dmabuf_huge_remap_pfn_range",
+      "total": 3,
+      "incomplete": false,
+      "items": [
+        {
+          "repo": "sumithemmadi/kernel_xiaomi_peridot",
+          "path": "drivers/dma-buf/heaps/qcom_dma_heap.c",
+          "sha": "1784dc722af976ba89c59c2eb546e258997a2431",
+          "url": "https://github.com/sumithemmadi/kernel_xiaomi_peridot/blob/1bf70b191d108a70a06bdb2055f9d21cf8cc92ee/drivers/dma-buf/heaps/qcom_dma_heap.c"
+        },
+        {
+          "repo": "Lycra-GX/dragonknight_kernel_peridot",
+          "path": "drivers/dma-buf/heaps/qcom_dma_heap.c",
+          "sha": "1784dc722af976ba89c59c2eb546e258997a2431",
+          "url": "https://github.com/Lycra-GX/dragonknight_kernel_peridot/blob/0dad092b5de2333af73a250394597e191020c391/drivers/dma-buf/heaps/qcom_dma_heap.c"
+        },
+        {
+          "repo": "shekhawat2/android_kernel_xiaomi_peridot",
+          "path": "drivers/dma-buf/heaps/qcom_dma_heap.c",
+          "sha": "1784dc722af976ba89c59c2eb546e258997a2431",
+          "url": "https://github.com/shekhawat2/android_kernel_xiaomi_peridot/blob/062233df735dd3db2e20aea2f7d3f87c0b1ffde2/drivers/dma-buf/heaps/qcom_dma_heap.c"
+        }
+      ]
+    }
+  ]
+}

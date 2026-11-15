@@ -1,0 +1,1287 @@
+{
+  "scope": "issuer/serial lookup and CMS cryptography, NOT kernel integration",
+  "pem_sha256": "f091785cb6e012942831b3d67026c3c92615442230e2e39f29e9c5d146206061",
+  "archive_sha256": "fbc53261d5ae60c783f6516e67e90cec33e2cf3b197afa7ca14491c6cfa2388d",
+  "counts": {
+    "stock": {
+      "(False, False)": 60,
+      "(False, True)": 60
+    },
+    "candidate": {
+      "(True, True)": 60
+    }
+  },
+  "tests": {
+    "pem_roundtrip": true,
+    "oem_positive": true,
+    "oem_removed_negative": true,
+    "tampered_negative": true,
+    "unsigned_negative": true
+  },
+  "negative_input_sha256": {
+    "original": "2985f9157e581059143646cec948f7535e4d1c5b9197bbd9173d48aa3671ef71",
+    "tampered": "dfe6ae3dd1cf18df14c80fc0f4b223bcc4214b7270a8703db8e36df91eab0238"
+  },
+  "rows": [
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/arch/arm64/geniezone/gzvm.ko",
+      "sha256": "e15dbae7e6216c271d16922a1a9033ee49cf67d2d974c23ace25e151af0fc098",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/block/zram/zram.ko",
+      "sha256": "c0f35f13ee809b9cca1e9e40e8c796b4aa1607aeab7d55a8d90d85c3240e7662",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/bluetooth/btbcm.ko",
+      "sha256": "ce5d387fec90ed5391d03503be629bb56b138259fe05af31f65398332f31e58f",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/bluetooth/btqca.ko",
+      "sha256": "7bae95b3eeb7dfd44df6e1f8ed690bbe3603f55da0313cf2ce0c480e6cff024c",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/bluetooth/btsdio.ko",
+      "sha256": "38df16e0056c6696f1f8b5fef2828885bfdd135dcd24ed7df14563e37e33c70b",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/bluetooth/hci_uart.ko",
+      "sha256": "39bf6edd393e0fe25fa9cc2c6790c6825532d314fd90297a7ed82d18c08de93b",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/can/dev/can-dev.ko",
+      "sha256": "b00311460d037d2e5f1de6dbe33410e0cd4a8e9af7f739ea4bbd64baadf5eea0",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/can/slcan/slcan.ko",
+      "sha256": "2b1aa0169f9569b7c067d8701512ddb2e7529953700c2050aeb3c504a2632c76",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/can/vcan.ko",
+      "sha256": "656991f350c0853cb2ffca30c669aca24b4789a392145bd442a874fbc9aead31",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/mii.ko",
+      "sha256": "c8e33e0f6b5abb1ae4bfecaa12d6ad7372b5ffaf2dfc69d6cd762facf0adf443",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/ppp/bsd_comp.ko",
+      "sha256": "dd659133b235a6fb5ca25425be6180b45611b83ef5fab870c8cebb0c5bcfe6ad",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/ppp/ppp_deflate.ko",
+      "sha256": "07b0936681fae9d0642777a3e631463eec76e8cc1aa78d1cf02da5864ddb541f",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/ppp/ppp_generic.ko",
+      "sha256": "0e2454b9084fdaea9439c74f86f5a53229c241f125f15a50b9edeb51837a5dc0",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/ppp/ppp_mppe.ko",
+      "sha256": "b86e557144c3b7ee913b8766a651551219cb1b8e6c30d11f8bea7a6f94dfd226",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/ppp/pppox.ko",
+      "sha256": "20b25dc58362ae8d65c9217461d3d0ebcca1c61a5117eaf54cc1a91b64a6c285",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/ppp/pptp.ko",
+      "sha256": "3df292f2ca015ea98f51d88978c9802ec826c33bd41c4d1e2740592490ad7666",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/slip/slhc.ko",
+      "sha256": "8ee396aec30754c20eaa69c6de67b7183ea8e820eec09a794ab261a131436b9e",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/usb/aqc111.ko",
+      "sha256": "aeba95c1e4a3efec4590a5b896c53bbd65de3c479e0d6de4a1b6b6281a1be681",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/usb/asix.ko",
+      "sha256": "a0b8841d290fea6545bfae24d8f1a9284bc3cec32da6d291552451538278f7d6",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/usb/ax88179_178a.ko",
+      "sha256": "bf792b19845610ca9f2491114b2a61d2d1b5d82f4af7819e75fe15612609f3fa",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/usb/cdc_eem.ko",
+      "sha256": "fcbc4e1bd742b2dfa5fb0c7f26ec981981554ee5cad0da928e72e928773db79f",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/usb/cdc_ether.ko",
+      "sha256": "27dd3a7a4364ed5a33f832f4385eeaef397635eb983fcc966048b79eea100760",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/usb/cdc_ncm.ko",
+      "sha256": "4a97d42e83b3e2234f7cebb2ed56f89fa3c5af98304803bae3950c24f0f40f4a",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/usb/r8152.ko",
+      "sha256": "6043ca5ca98f6a929670346ec14c200c17584ae9d7db61548a33e10093613744",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/usb/r8153_ecm.ko",
+      "sha256": "667f048fbdcca005de083ee60ef81d8709bcbb24ac552758bd46a26021cefbd1",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/usb/rtl8150.ko",
+      "sha256": "dd220dcd8f4c0b23e5bd0ceb21d11abcd636e1cce3959d4aaeb361fbb81cf6f3",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/usb/usbnet.ko",
+      "sha256": "deb362c632822c4e6f905621951a678a1364382939aadc1c402e5f386f466ed5",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/net/wwan/wwan.ko",
+      "sha256": "abad73b0284d537d4455ddb8d4575d46377194a624d6c2d2559e460f5bc7bed4",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/usb/class/cdc-acm.ko",
+      "sha256": "cae2048a8106ee19941c4532388e7ea65a851d112229fd2d37d2e29492c55f72",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/usb/serial/ftdi_sio.ko",
+      "sha256": "c2ba4e55857a830d7b863613fdf7aba05b2b7979d87927e146d70f28e64930ce",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/drivers/usb/serial/usbserial.ko",
+      "sha256": "b037884777f3cb097a373967c83c466e810428282653021ec351b3c2dc918f60",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/kernel/kheaders.ko",
+      "sha256": "cddb1c25b9c17b4c5b2bd5f2190dd1d2099f7616e1e6a1a9538956159901621d",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/lib/crypto/libarc4.ko",
+      "sha256": "6a37a32de76d01ab986fc1bca4c7dc8d29a76fb1ea35da7c1db3f66648cc60b6",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/mm/zsmalloc.ko",
+      "sha256": "96ea97ab6f65a10f0ae7f51f320a0f6a10783a8cd58928a9ec1ceaffc4888ad2",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/6lowpan/6lowpan.ko",
+      "sha256": "53fc005496a82968dbfc3ca2fce7ae0ef24a9a1988c9e29da424b8ac477336d0",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/6lowpan/nhc_dest.ko",
+      "sha256": "93bf0552a3d67f470f7863655d40b8e968992d325ef9fba6d81d7d6a462812c3",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/6lowpan/nhc_fragment.ko",
+      "sha256": "4b4fefbd5427f23ceab962a6152fdce87988ad68b58bb3d44436f2abc374a03f",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/6lowpan/nhc_hop.ko",
+      "sha256": "6325306e6a9627f43fcf6d024b54a4bc05a5867f712de998af267f4ac166e2b2",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/6lowpan/nhc_ipv6.ko",
+      "sha256": "9bf2ac0e0e489e146d337f893b314c8746a0851437b9381003ad1fa00d59eb5b",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/6lowpan/nhc_mobility.ko",
+      "sha256": "262fc89249c97bf1a7c0d1f505a4ec682fae5471450b7c726abd0fac280cc188",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/6lowpan/nhc_routing.ko",
+      "sha256": "0421e45664a373585a20d58c8ce7d6d0dee3ac837dd2c93c01d746209dba942c",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/6lowpan/nhc_udp.ko",
+      "sha256": "e3952e4fc51b11332bd7e95496223c921ae27bdb91f6da01284274cd58270ddd",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/8021q/8021q.ko",
+      "sha256": "9232d20aaf7e9cf28d78243157603ea30609620b883ab74c9c289018e550b3cb",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/bluetooth/bluetooth.ko",
+      "sha256": "636420619e8bc04df22156aed8dd1877764a830d163adcf46595164d5dca87ad",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/bluetooth/hidp/hidp.ko",
+      "sha256": "0ddb498bb238ac245c73e39296214ba5494feee03ed46d9937bbe5b5ad20a262",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/bluetooth/rfcomm/rfcomm.ko",
+      "sha256": "67c465d42e6959630c3a804c11e0b021d6140882bed98fe0f251bff1ac501307",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/can/can-bcm.ko",
+      "sha256": "97effc7e091a60b6fb98d05f84c8deb222a4ee6d95c3a953b6ccc98f27014e88",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/can/can-gw.ko",
+      "sha256": "a9d3faf1200046c737b865649803d2021301a4d0c28faa2770203de877f78323",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/can/can-raw.ko",
+      "sha256": "af3d66e1ce6e3d4b430869c4843fcc8a016d7feb52ef95f771f6e329456f06d5",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/can/can.ko",
+      "sha256": "7e688a624cef5a7861c52bd782219040f133818bc725d66e4d4ae7120f7b4182",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/ieee802154/6lowpan/ieee802154_6lowpan.ko",
+      "sha256": "98e7ee3a6ec64c013fc27270cd86d24356a434c7abb64f7755f66001ff16bd8e",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/ieee802154/ieee802154.ko",
+      "sha256": "19da7be47474397b54e1cdedeffa78756a7fd2713ea181ff57c0f179557f8d14",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/ieee802154/ieee802154_socket.ko",
+      "sha256": "4d8647cfc906d4da64405e4e17b797f35401bfb720ad23bc8d919f3311746683",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/l2tp/l2tp_core.ko",
+      "sha256": "a8b375ba859e72af875524d053a251ecf82384bccb0ccfd83afcc0b43bbe4403",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/l2tp/l2tp_ppp.ko",
+      "sha256": "ac42b303525f649c53d71d992b7efb275a09c0fbfbb273eb8af420bcb3d49f57",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/mac802154/mac802154.ko",
+      "sha256": "e305a8d8f913165831de76613e7213094a48be6ae1de9273a3410e9d1cc032a1",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/nfc/nfc.ko",
+      "sha256": "cd35d81254407fb8a1883c91a958554ba2ea7e66851b5f1728fa35f84d6218b1",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/rfkill/rfkill.ko",
+      "sha256": "f7b75e84c48a16152eee2a129a9eaca94e3fb176c0882b9abbdd170d3564dc89",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/tipc/diag.ko",
+      "sha256": "98bc9942ea6c6f6bfe05820f24056e9cffc65040b614911292deffdf6ccdcb82",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g0c3d559bcd85-ab14529422/kernel/net/tipc/tipc.ko",
+      "sha256": "55d0c7f813b2ac44fdfc5a0dfa16ef58d46c7f560045dfc45de9440b52f9ba45",
+      "candidate_only": false,
+      "combined": false
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/arch/arm64/geniezone/gzvm.ko",
+      "sha256": "d9a9463788033bf77591a1018dbb7bec75204ce8064677e551e0f6a91182799c",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/block/zram/zram.ko",
+      "sha256": "0455981cc7f772d139c67dd5b14ef434655d6d6cd9dab4be35086c6a45bb68bb",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/bluetooth/btbcm.ko",
+      "sha256": "4b2f4a6fa77028200de9c33d96930bb3cc728482042ee3fcf856a810b01a7e44",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/bluetooth/btqca.ko",
+      "sha256": "7acf913ea5cf090d220c3afde0177fe914a0c72bc3056f8ceb0ecce5e846b4d3",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/bluetooth/btsdio.ko",
+      "sha256": "b231bce2dd47c0e71aeb87e8eb46dc95d90a322fad3a75008bb56aef76504c02",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/bluetooth/hci_uart.ko",
+      "sha256": "ece20c2aa53ca75c94abbed9ddb94f5dbffc93f32893e37fc3596c3247beed41",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/can/dev/can-dev.ko",
+      "sha256": "867debd3dd32961a5461e261bdbfa8480f882613eec4378b303d4df1345779e7",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/can/slcan/slcan.ko",
+      "sha256": "44ad6fe5cfd59a7c469911b5ec0892230c3098da5a44e297e8173595dffcf546",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/can/vcan.ko",
+      "sha256": "636738192597165ad4ab98e38a67998f7f8cac5a736949db17b235d2708f2779",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/mii.ko",
+      "sha256": "04cf830323d6f8e4b002207ab8a8973d84e26584b9b704192a0d358eedf71aec",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/ppp/bsd_comp.ko",
+      "sha256": "1c88bf1628d15b809564def75e0cf48c3f252394dedf2256bfac79c3080adf47",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/ppp/ppp_deflate.ko",
+      "sha256": "e56e45b1f96c1e89c8fb5171cdd932b84e852e6d7417c35283ffbdd55af4acd3",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/ppp/ppp_generic.ko",
+      "sha256": "5dffe432942a11acb731faaa2bd36422ef74f9cc4ca9f5419fb6eb4c1a7cbc74",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/ppp/ppp_mppe.ko",
+      "sha256": "9dcf3dc6769225e475f2dacc3af59a1c185bb63ee3ced873274e83fad3646d75",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/ppp/pppox.ko",
+      "sha256": "74b21f4ba717cce9d0c265935d59770bc576177cae644a8c415442001c0a5aaf",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/ppp/pptp.ko",
+      "sha256": "db721bc55b2de318384e1ab7f31c66424f384a220df0bc3b557f54d37e369f26",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/slip/slhc.ko",
+      "sha256": "57ba82ebc7b0a71546954077ac409c4ce3eb6a51330a6396da418e5ac0813704",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/usb/aqc111.ko",
+      "sha256": "5b1cb600165cd078542e45df9a0b81b88739f4c490283f454f2e377fdf2afcf2",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/usb/asix.ko",
+      "sha256": "622a791360d7d943bb55a94f295967724db3b025363a3144eaca71f14e0631dc",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/usb/ax88179_178a.ko",
+      "sha256": "f24906db7f31c81d7f81957f70c9210a6cfaad9bed11e861bc782d6a71e236a9",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/usb/cdc_eem.ko",
+      "sha256": "ed306e36ac80c77b9ce625d0c44316d59992ab77a3b69470ab970e364517786a",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/usb/cdc_ether.ko",
+      "sha256": "301b133a2989d59cd3026f3f08fa18d4ec6bf0a4b5218c9f9bf461c7b7e252f0",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/usb/cdc_ncm.ko",
+      "sha256": "32e108b4d6896268471440302a68f5b878a7d5531b67dcd31aa1b52c45627eae",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/usb/r8152.ko",
+      "sha256": "4983983703d71aec23a0dc48b5f389f9ae62637f28c92ee1582efadee4ac2c26",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/usb/r8153_ecm.ko",
+      "sha256": "84886bcf044eb88897876ca0fb752744c39c41566a71620f84602977559fc0a4",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/usb/rtl8150.ko",
+      "sha256": "2f05a9213bc105e655abf69acad215a6d5bcb69ef36cc27a9f3cd8740dfd9704",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/usb/usbnet.ko",
+      "sha256": "75112f78a82e7db2e36c082789ea8d13732c70ff422f473f05f2c54eea874bd5",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/net/wwan/wwan.ko",
+      "sha256": "d67127fca97edc869157b629655f1e4e649e308571f157ef9a023e8d24ce4697",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/usb/class/cdc-acm.ko",
+      "sha256": "e29f308c9df27445dc74be843d1f0553339f07a8ce845b69be785f9e46569e48",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/usb/serial/ftdi_sio.ko",
+      "sha256": "d3dec8028bbb24e404dfd3245bb9762283dd9e42ec0db7a2646f63b859512d9e",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/drivers/usb/serial/usbserial.ko",
+      "sha256": "939e22ff2a4bdae3a14ac9aa548677599129888a0dadcdf57d3334657dc76579",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/kernel/kheaders.ko",
+      "sha256": "707e63efdc286c59c03ebecc10b7893e074ef61e2e5cfef51645fc6dee3cd31a",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/lib/crypto/libarc4.ko",
+      "sha256": "642f2a98b8830da97c5b146bbe93a9766b805d5e06e80b8136cb15a8e17c64c5",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/mm/zsmalloc.ko",
+      "sha256": "538c129861f3b12dfdea607ab5aad65bc8ae7cf071b475807f1f01cb6ffc0b8f",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/6lowpan/6lowpan.ko",
+      "sha256": "5104c8dbaa7305ed5353492c523186276ec03c996f9976e2aea62b404b6f6e4b",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/6lowpan/nhc_dest.ko",
+      "sha256": "86e4cc2c7905d752d2d7251b5dc0b2cf69b87ca125c85dec8c12bddfc7057ee1",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/6lowpan/nhc_fragment.ko",
+      "sha256": "003a350494b662acc1bec28ebc8f6145b433a4f1615cabd602ab8125f4482532",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/6lowpan/nhc_hop.ko",
+      "sha256": "ef152297d7985174c8e85cb9dda307821aa5b1d3b82fe72532980fdbc5ead9eb",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/6lowpan/nhc_ipv6.ko",
+      "sha256": "dba97441481af83dc1bb0051bdc6e1eca6ce182fd222757057fbd91bee56df48",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/6lowpan/nhc_mobility.ko",
+      "sha256": "e6d9d2858d3ca52f96d17b05a73c3cfddc71c00542742bda1d6a5aa94cda1a07",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/6lowpan/nhc_routing.ko",
+      "sha256": "6bec714d562804de1473ae332aed6357ef79ab95e73a807211f7e077c1b90822",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/6lowpan/nhc_udp.ko",
+      "sha256": "938af0daf09a1c08eb30906dd057bb6f5af88cb67a181b0b9ecb905aae500866",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/8021q/8021q.ko",
+      "sha256": "bef0d9d30864c4f94faebea8a47213b3c557f7963a873f4f3c4d7415ca85cf7e",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/bluetooth/bluetooth.ko",
+      "sha256": "913fdffecad10cf0481b9c5be6c2f6a9dfd242b4cca9b2725c8a52d2b23307b9",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/bluetooth/hidp/hidp.ko",
+      "sha256": "c802903de351320a9f69f305f09aac6ca691506e5c9a6f55e214d531789077a1",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/bluetooth/rfcomm/rfcomm.ko",
+      "sha256": "e937686c53e57b22c331a61ed6c4a0f810401b15950b31c60b28456d609f6aa8",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/can/can-bcm.ko",
+      "sha256": "3d42a68cabd06a78d62dece43edd6d2fbf34e45ab3190427f78202020a3496eb",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/can/can-gw.ko",
+      "sha256": "f8a2742a2c53913bbc4fdf4a62d16695d8a3ff3407b334204338caded7c071af",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/can/can-raw.ko",
+      "sha256": "d9013c17d0a04f4972821bc8d301572a83c4238d3e228e25966cb5e603cc3149",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/can/can.ko",
+      "sha256": "4647e5b1c87d9361b4bc4ab33f133435d38e3905e36110e45f52e9ad30a25ffd",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/ieee802154/6lowpan/ieee802154_6lowpan.ko",
+      "sha256": "af7f0014a151477d7987b48c55a11780dd4fb11dc128e9f571c7c65cbfbe153b",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/ieee802154/ieee802154.ko",
+      "sha256": "40c74d751a60a826378b179a6f08a7837c2890f8ce4da7acce124bd27561d2ba",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/ieee802154/ieee802154_socket.ko",
+      "sha256": "8a3115482eb141d37029cacf6ac8fd516607b2b65f7f0d710d86d2e88fdfc559",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/l2tp/l2tp_core.ko",
+      "sha256": "0969a050e2c0e1eefba364ffe9dbffdfb2d3827be978f62ba43e8e5a7389c3be",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/l2tp/l2tp_ppp.ko",
+      "sha256": "e32c6823f48b19771f5c063b6a91428cae8127ef6786903e6fa238ce08009ee0",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/mac802154/mac802154.ko",
+      "sha256": "585e83b927f1fa3c0466193b4a4db6f0a17d2eb9506589f94621e731d5a7afd8",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/nfc/nfc.ko",
+      "sha256": "8362b392cb491f0f83f7794de9b979c5835c8fc8bb92a1390e35f0ee10be0d2d",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/rfkill/rfkill.ko",
+      "sha256": "51618692e8833dd9019654903f462b1713698745f7ac07427d5cab115a0a7ae1",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/tipc/diag.ko",
+      "sha256": "7f34b77955ded816a7ada7285a7d362d85f2e9122f338e4c07f3296a1d7225c3",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "stock",
+      "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/net/tipc/tipc.ko",
+      "sha256": "2985f9157e581059143646cec948f7535e4d1c5b9197bbd9173d48aa3671ef71",
+      "candidate_only": false,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "6lowpan.ko",
+      "sha256": "c80bc82594d6641e5551e3a8fefbf825f10b6278a3808b9f4c5532f184d5cb12",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "8021q.ko",
+      "sha256": "b3976769507ddf1218869401cab84aa4c48fae1a361a23530b74aea105aed02e",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "aqc111.ko",
+      "sha256": "d2ed5b1ebbd0a86b879b25536f87ac73652075f5f3b6428e4db2fea2bdc819ea",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "asix.ko",
+      "sha256": "2db186e8745fcddb6e9c7c7ea1015ca9661d2835f82c6ef6f1576b0dd6b5b59a",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "ax88179_178a.ko",
+      "sha256": "56d03e09559588268ab05a041bdf19432eff12dc1739517d2855c6df5d468ecb",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "bluetooth.ko",
+      "sha256": "b19c300dcfa481d6f9e6d1d91474d25ca1b3aa361b609d9e16940f058ac63dde",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "bsd_comp.ko",
+      "sha256": "1fa5de57299623acc4236362d0d5c60290a1fda614f4de97e622202a04fc53ca",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "btbcm.ko",
+      "sha256": "1e3f7c6bd60f7c0fe5e279ac1d9ed656327b22f7c8fc0aed641fff5721142d0e",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "btqca.ko",
+      "sha256": "d20e18d86e77fc8ac7cf82d36ead73eadea8734222c05630457a0c242d7a962a",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "btsdio.ko",
+      "sha256": "9b0bd04d265c88c14816adee565a8be38329e7122cd1985c7639f1da5184a482",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "can-bcm.ko",
+      "sha256": "c8661bea48c11cffb4e565d5d2a78d388b335851d70f701ddc68c252d96f367a",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "can-dev.ko",
+      "sha256": "abd7cd185686a4055f17fa92923cad2d518c294f040622be84d180e13ad471f2",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "can-gw.ko",
+      "sha256": "aa5a4b48c4c262dd3f436cb2936f33476b7ab55a0ab84f4c1d494da1ce2f678f",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "can-raw.ko",
+      "sha256": "3f17607f25ff50c48eb0f67ec5a44b7275d0957df54623b239e8b4a2fc9a9877",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "can.ko",
+      "sha256": "810f4612cadb58ae81765e5e3f9201e9f128f77f239f1fac1ece6ce7a1532eb7",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "cdc-acm.ko",
+      "sha256": "4e4381e0526efc3e518c4420e0b9191940fe9eb343868db99d74146f5f0e2e97",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "cdc_eem.ko",
+      "sha256": "3f784010ee3311ec84d07b2710d5d9dd748355771bbf33044630e8110eb3da3b",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "cdc_ether.ko",
+      "sha256": "7f68e64f1048adc7b0c70d2ffc61792483c2ff911e4efa3c9b17ca05debead7a",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "cdc_ncm.ko",
+      "sha256": "67ef60ecfd4d526e347d69ff1caec434dcd196de28562f48d2fb8cc90cddac1b",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "diag.ko",
+      "sha256": "975392df88f660bf8b729a05d733476d40214c0f5999a440d9021901ab2b5d00",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "ftdi_sio.ko",
+      "sha256": "c7af21dad8c5c939772270cec86e4e3775baa8263a07e4d825be442ef304b584",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "gzvm.ko",
+      "sha256": "eb26b3a3a97e84954d88457ee5e4ed0d6f64c9a6d69b088c83b43a62560a91b7",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "hci_uart.ko",
+      "sha256": "68f25a631e8d3a5a4e9b6c372901d16612a6b2aaed0aa4ce21e799cbdbb3edfe",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "hidp.ko",
+      "sha256": "2453b1f752a882cfd072dc06e325f621ee6672839496537b9db0adab5015f30a",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "ieee802154.ko",
+      "sha256": "3703124f6b790d00748fcd5f2c098a70ce1cb71d41c7f4e809cb89d284c7e5bc",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "ieee802154_6lowpan.ko",
+      "sha256": "4271c4199364fe6b46a17cb7c12adbc55a040931726729bab7ea0798a5c4aa58",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "ieee802154_socket.ko",
+      "sha256": "6841cd816c3be063ab2ae4869cac58e190629db495981ebcdc29e3932dd2ed1b",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "kheaders.ko",
+      "sha256": "32af572484ce0c4b460da3e0e67af94cd194219623f8bf83d9013b1a77fef9a0",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "l2tp_core.ko",
+      "sha256": "d6aeb041b8a165e0599faa9de7c2f35f76449f20334d263dfc1ffb506af4bbaf",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "l2tp_ppp.ko",
+      "sha256": "3159abdf46e236432b70821a1dd27c37ca83321491dbbecf02610bf2c8c73fa3",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "libarc4.ko",
+      "sha256": "0dac135e08dca9cb1710a1820057bd5acb5d8f277c0cca2f25b4a6e5a0df0156",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "mac802154.ko",
+      "sha256": "15ba0a7478ed37da4c836678f8b71f67e56689e7fc2af0182a9a1d1e32c99305",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "mii.ko",
+      "sha256": "8954a80ccf459aa2bc00a8e837d9f8bbf74a62eafd3f46e9bc066a03ea169fdf",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "nfc.ko",
+      "sha256": "8d4399565209b801218c25ecc34eb144adf855a126fe52494d6971e48d1a1d87",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "nhc_dest.ko",
+      "sha256": "c80091b464fd737eae3cef7b8b6c90cbb17a7422dd13bcae12ace9ce72a8190e",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "nhc_fragment.ko",
+      "sha256": "96f3ab07be4a9680e173a0e920d8bf10bd91cae864744bdc7d76d768213e887b",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "nhc_hop.ko",
+      "sha256": "1ec40ad22c69287b7232fd3213a27ed9e1a0ef589cc711a1279c95ad2dc5cd8c",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "nhc_ipv6.ko",
+      "sha256": "f5ea185354d6b58c7bb9419d03b5c42194c8c33eee87c93b797c58cd7630649b",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "nhc_mobility.ko",
+      "sha256": "6bb8ff5e9eaa8b967c2f81127772900c33ab136daebe005fc0262d03fc25d063",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "nhc_routing.ko",
+      "sha256": "aaa678e98a25da7e9be0ae70cb5bd248bd31078d62e38be4d8e4d3ec8bcc8031",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "nhc_udp.ko",
+      "sha256": "5c572ea72165c2e6e98bcd7b4b563e9650cd5bc2078c3995a4f0d338790798fe",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "ppp_deflate.ko",
+      "sha256": "81915fe83ca9ed1f1a7e348aa5c2055ca225627a99a51d6ea2123d99c2e30bf8",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "ppp_generic.ko",
+      "sha256": "936c05b862b9a89728e46a064d894b39822a5e23a7f506b91a862e18228e6835",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "ppp_mppe.ko",
+      "sha256": "b54e701a82a0d222862472b3a7970364e7f46ab477f2feba1c6db9c903f4a1e7",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "pppox.ko",
+      "sha256": "a0dee926803174609c8263be244b4874ea34471014d28079f15f0404ee5c347a",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "pptp.ko",
+      "sha256": "26e2e5c2e1dda7e1e389204b0c3ccce33d8bcd91c386bf82bc944af12b76aef4",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "r8152.ko",
+      "sha256": "5862e5dc5cd7be9f06691fe682820e26d625730f65fdf30d6a5b92ac0fd24c9f",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "r8153_ecm.ko",
+      "sha256": "90a7b19d232acf75f43d2d568a6bf8bec212e1fb89a27c6fcaa4efbd1c1b7d41",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "rfcomm.ko",
+      "sha256": "2da64f4bcaea48a2410776a8dac8c9b1d2ddd3234d5dd2472783544825eb6bc7",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "rfkill.ko",
+      "sha256": "39ae564df569fa02bcbdec15dd6479a76937227fba5853ec759b428c269accba",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "rtl8150.ko",
+      "sha256": "20728e618f4d3e0a153310a60f0c456360c923e414e669d7a315281ae4a77c3d",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "slcan.ko",
+      "sha256": "12f7fc7d0b28fe540896c890c2dc63154dd0f8c56013454498e0cef31bfcae0c",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "slhc.ko",
+      "sha256": "cfda4133919f263c8f1b7e962c1115925694773d6bcb9beae43e2386852dd933",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "tipc.ko",
+      "sha256": "ca259041fc0238f54dbe8de04b475b8f2fa4c11bfbda9fba47b9910e44acbabf",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "usbnet.ko",
+      "sha256": "ca2c3fc26864db919f80afbc181f760bd2037e974e7954ad22ce93e5912ca5c7",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "usbserial.ko",
+      "sha256": "7ff97e2ab2a172e5959135081b89f1a14dbff7f047bfdb4def7add95db7d777a",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "vcan.ko",
+      "sha256": "69b309956c8e68e0ee6d0bd35f7fe8ea4a4a6b8cea916a9eef68712b448fce88",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "wwan.ko",
+      "sha256": "884e4d5dd627244652e5f75d74ee85714b930cc3eeb281640167803d2b3c3a89",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "zram.ko",
+      "sha256": "2b04525a59f8579f88848c08ae2014f717c25f843a3ceba05826fe588ab7d4a5",
+      "candidate_only": true,
+      "combined": true
+    },
+    {
+      "class": "candidate",
+      "file": "zsmalloc.ko",
+      "sha256": "c7fe3a6f623dab15c17cae62ba2b6f03569a518b81770fae176c57fdd1f4ef1b",
+      "candidate_only": true,
+      "combined": true
+    }
+  ]
+}
