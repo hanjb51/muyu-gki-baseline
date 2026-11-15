@@ -175,7 +175,7 @@ row["tool_versions"]={n:run([n,"--version"]).stdout.decode().splitlines()[0] for
 commands=[
  ["bison","-d","-o",oldbuild/"parse.tab.c",oldsrc/"parse.y"],
  ["flex","-o",oldbuild/"lex.lex.c",oldsrc/"lex.l"],
- ["gcc","-O2","-D_GNU_SOURCE","-I",oldsrc,"-I",oldbuild,oldsrc/"genksyms.c",oldbuild/"parse.tab.c",oldbuild/"lex.lex.c","-o",oldbuild/"genksyms"]
+ ["gcc","-O2","-D_GNU_SOURCE","-DYYDEBUG=1","-I",oldsrc,"-I",oldbuild,oldsrc/"genksyms.c",oldbuild/"parse.tab.c",oldbuild/"lex.lex.c","-o",oldbuild/"genksyms"]
 ]
 for cmd in commands:
     p=run(cmd)
