@@ -115,7 +115,7 @@ for name,source in {"official_c_with_official_headers":(oldroot/"mm/swapfile.c")
     if pp.returncode==0:
         gs=run([gen,"-T",directory/"types.symtypes","-r","/dev/null"],input=pp.stdout)
         (directory/"genksyms.stdout").write_bytes(gs.stdout);(directory/"genksyms.stderr").write_bytes(gs.stderr)
-        vals=dict(re.findall(r"#SYMVER\\s+(\\w+)\\s+(0x[0-9a-fA-F]+)",gs.stdout.decode()))
+        vals=dict(re.findall(r"#SYMVER\s+(\w+)\s+(0x[0-9a-fA-F]+)",gs.stdout.decode()))
         row.update(genksyms_exit=gs.returncode,target_crcs={x:vals.get(x) for x in ["__page_file_index","add_swap_extent"]})
     summary["cases"][name]=row
 
