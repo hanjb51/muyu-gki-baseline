@@ -1,0 +1,625 @@
+{
+  "files": [
+    {
+      "repository": "ravindu644/Droidspaces-OSS",
+      "ref": "cdadb9eb5d0f86aacffff60776333e6f6b73a30a",
+      "path": "Documentation/Kernel-Configuration.md",
+      "git_blob_sha": "2ed5e60a633f97013f01745d79f8d249625cdfd4",
+      "decoded_utf8_sha256": "7d3bcdde42e2fefcc2dd7e24ad95115704c68c51d6895e9b828723fd7cf009ac",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/2ed5e60a633f97013f01745d79f8d249625cdfd4.txt",
+      "url": "https://github.com/ravindu644/Droidspaces-OSS/blob/cdadb9eb5d0f86aacffff60776333e6f6b73a30a/Documentation/Kernel-Configuration.md"
+    },
+    {
+      "repository": "ravindu644/Droidspaces-OSS",
+      "ref": "cdadb9eb5d0f86aacffff60776333e6f6b73a30a",
+      "path": "Documentation/Installation-Android.md",
+      "git_blob_sha": "b6f33f196aa2a6d0b54167946af313ed966c7412",
+      "decoded_utf8_sha256": "0ec90cce5269209a985ab7d139a51771a936f70a4fd869da7494bad01b54a779",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/b6f33f196aa2a6d0b54167946af313ed966c7412.txt",
+      "url": "https://github.com/ravindu644/Droidspaces-OSS/blob/cdadb9eb5d0f86aacffff60776333e6f6b73a30a/Documentation/Installation-Android.md"
+    },
+    {
+      "repository": "ravindu644/Droidspaces-OSS",
+      "ref": "cdadb9eb5d0f86aacffff60776333e6f6b73a30a",
+      "path": "Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_6_7_8.patch",
+      "git_blob_sha": "5fb2a9ee7c2ea7de781e023737d9acfecb639098",
+      "decoded_utf8_sha256": "47fc945b2d73d9737d56c0f1c3a74cda0a95c30f9dc1b1abe546fa48940c4460",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/5fb2a9ee7c2ea7de781e023737d9acfecb639098.txt",
+      "url": "https://github.com/ravindu644/Droidspaces-OSS/blob/cdadb9eb5d0f86aacffff60776333e6f6b73a30a/Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_6_7_8.patch"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "kernel/Kconfig.hz",
+      "git_blob_sha": "38ef6d06888ef14789ffa40be1f877b65c2d1119",
+      "decoded_utf8_sha256": "685e9a79f3dbf17e9bd5b402dfd25ad014886fbe1b6975a0913b3621519cd7fe",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/38ef6d06888ef14789ffa40be1f877b65c2d1119.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/kernel/Kconfig.hz"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "arch/Kconfig",
+      "git_blob_sha": "a516ee464580bf6b0891930f1fa9a9b6a203e7a3",
+      "decoded_utf8_sha256": "0e5b1e8a8b18e91299ee12e59451b736eb191032db77d4de7a6c171ff32e8886",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/a516ee464580bf6b0891930f1fa9a9b6a203e7a3.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/arch/Kconfig"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "arch/Kconfig",
+      "git_blob_sha": "322105079929f85e0428e2c9c340cd18166ee0e3",
+      "decoded_utf8_sha256": "61e3fbf196803b72ef0b43200916059b63fa938092e105d066e0847b39baa926",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/322105079929f85e0428e2c9c340cd18166ee0e3.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/arch/Kconfig"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "include/linux/fs.h",
+      "git_blob_sha": "57468b7a859951119d60837a34aa35efaf72ea12",
+      "decoded_utf8_sha256": "79a824b25b9a23d328269a8e04704dc678fda76f645a448d070e582f0fa1aa50",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/57468b7a859951119d60837a34aa35efaf72ea12.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/include/linux/fs.h"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "include/linux/fs.h",
+      "git_blob_sha": "0283cbd3c71d705a8f5b8a02cf78a6c5c699330b",
+      "decoded_utf8_sha256": "64b09f3ad3ce5b8e146458079905c9b11e2aeab68ba5bd0fe5e458370156b389",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/0283cbd3c71d705a8f5b8a02cf78a6c5c699330b.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/include/linux/fs.h"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "arch/arm64/Kconfig",
+      "git_blob_sha": "759e26a83a3de8dab3593381ff8a1ed5a473a5fd",
+      "decoded_utf8_sha256": "6437bc8fe76e02311b4954fb257d98b6f6e2102d94ba57cbd4a4ef249966b900",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/759e26a83a3de8dab3593381ff8a1ed5a473a5fd.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/arch/arm64/Kconfig"
+    },
+    {
+      "repository": "MiCode/kernel_build",
+      "ref": "3b5ab5980990c0406c68d05baecd422ad5e30b8f",
+      "path": "kleaf/bazel.py",
+      "git_blob_sha": "70a44fa72a8cebc5e71f061d582f7f92a4f91fea",
+      "decoded_utf8_sha256": "247f842455175d6d8e5dd695556505e154412cef6fc3d2e492aaeb511171b56a",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/70a44fa72a8cebc5e71f061d582f7f92a4f91fea.txt",
+      "url": "https://github.com/MiCode/kernel_build/blob/3b5ab5980990c0406c68d05baecd422ad5e30b8f/kleaf/bazel.py"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "msm_kernel_la.bzl",
+      "git_blob_sha": "efa479b24c56de304b6567849fa662c2c2acdc9b",
+      "decoded_utf8_sha256": "7e1cd67eaea59daace8c10a80498e9c282b47ad76d8035c566291fd934cb6061",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/efa479b24c56de304b6567849fa662c2c2acdc9b.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/msm_kernel_la.bzl"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "msm_kernel_extensions.bzl",
+      "git_blob_sha": "235b1bc86f9c1c2cb329e815dd74320b55ca1204",
+      "decoded_utf8_sha256": "38411240c4a782f0b9a09fe340619efe7e0b67e82c8f5f92d259b4c94e0ddc1d",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/235b1bc86f9c1c2cb329e815dd74320b55ca1204.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/msm_kernel_extensions.bzl"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "bazel.WORKSPACE",
+      "git_blob_sha": "b6a0dc298b0d085ab9dbdb8e368bcd2176204c05",
+      "decoded_utf8_sha256": "d1806a4db1abec9973eb3d51d5a3b68c04c3cc8f177d59e3a185a2ba0f937ad6",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/b6a0dc298b0d085ab9dbdb8e368bcd2176204c05.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/bazel.WORKSPACE"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "drivers/dma-buf/Kconfig",
+      "git_blob_sha": "e4dc53a364282457e6a85fbc9a09f27ad561c401",
+      "decoded_utf8_sha256": "c8936a0e50f1a400a3adb1bcdb25d336646e3529afd66238d1acc298dbf9a624",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/e4dc53a364282457e6a85fbc9a09f27ad561c401.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/drivers/dma-buf/Kconfig"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "build.config.gki.aarch64",
+      "git_blob_sha": "d3980621c116e12c2d824a68832f356c51d4f217",
+      "decoded_utf8_sha256": "b61cde9e200b2fb5ec897a9df04a195ed346bf6bd02daa8d8f9eac9d8067ea31",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/d3980621c116e12c2d824a68832f356c51d4f217.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/build.config.gki.aarch64"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "build.config.msm.pineapple",
+      "git_blob_sha": "f47056560123caf29b55fe0810e6aec28d65ede3",
+      "decoded_utf8_sha256": "0f401f15745906cd92b36fd291fdb842e98b91e4fe83237e5f823436c62e8484",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/f47056560123caf29b55fe0810e6aec28d65ede3.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/build.config.msm.pineapple"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "mm/folio-compat.c",
+      "git_blob_sha": "e1e23b4947d73bd769bd319c821956911ff41fa6",
+      "decoded_utf8_sha256": "7e4c0b696a0e4d669ce8d159bc6a2b4164a0857ee191cc079b21a416bfd1640f",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/e1e23b4947d73bd769bd319c821956911ff41fa6.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/mm/folio-compat.c"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "mm/folio-compat.c",
+      "git_blob_sha": "e1e23b4947d73bd769bd319c821956911ff41fa6",
+      "decoded_utf8_sha256": "7e4c0b696a0e4d669ce8d159bc6a2b4164a0857ee191cc079b21a416bfd1640f",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/e1e23b4947d73bd769bd319c821956911ff41fa6.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/mm/folio-compat.c"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "mm/swapfile.c",
+      "git_blob_sha": "5d552d41cbf484bcd3dca09d3029cfb7ad8e7b6b",
+      "decoded_utf8_sha256": "b0cd6d587e147a8cbb02998babe5a4192637e9562aa1eab5d3e81d06f08a694f",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/5d552d41cbf484bcd3dca09d3029cfb7ad8e7b6b.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/mm/swapfile.c"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "BUILD.bazel",
+      "git_blob_sha": "1e3ac4e0f372b160eca71df50c2b4f6ccfd3f4b4",
+      "decoded_utf8_sha256": "a194a097dd703ae0075919a407c262210c775d753e302fa55ba731a109852eb5",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/1e3ac4e0f372b160eca71df50c2b4f6ccfd3f4b4.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/BUILD.bazel"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "Readme.md",
+      "git_blob_sha": "a882d0581ec01b07833bd6e6d37ec1e8c2dff4a1",
+      "decoded_utf8_sha256": "315599c1b769ff4b1d5386f9ffd00dcd659d2497deca053e4e34370d6a0e6dc9",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/a882d0581ec01b07833bd6e6d37ec1e8c2dff4a1.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/Readme.md"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "README",
+      "path": "README.md",
+      "git_blob_sha": "8599bdb4d54c89dbddd607686348ecd050201baf",
+      "decoded_utf8_sha256": "dd3e7f35ab197a4c00901803edcb7ee13fe498bece2cc58a69a4fdb6b5d694ec",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/8599bdb4d54c89dbddd607686348ecd050201baf.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/README/README.md"
+    },
+    {
+      "repository": "MiCode/kernel_build",
+      "ref": "3b5ab5980990c0406c68d05baecd422ad5e30b8f",
+      "path": "kleaf/bazel.WORKSPACE",
+      "git_blob_sha": "b68b2f4de44a3f0320a249b3c21a36660b146a75",
+      "decoded_utf8_sha256": "35449a3841d09b660bdf07e46868df982c53be6ad463ea5b6d16872108298d9a",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/b68b2f4de44a3f0320a249b3c21a36660b146a75.txt",
+      "url": "https://github.com/MiCode/kernel_build/blob/3b5ab5980990c0406c68d05baecd422ad5e30b8f/kleaf/bazel.WORKSPACE"
+    },
+    {
+      "repository": "MiCode/kernel_build",
+      "ref": "3b5ab5980990c0406c68d05baecd422ad5e30b8f",
+      "path": "kleaf/workspace.bzl",
+      "git_blob_sha": "96a397f4fa058b46220d40fa01598a9d685a3bcf",
+      "decoded_utf8_sha256": "7bd027551235420bb4e27310f95da56033984bef8868e84dfa34ec28ccc50040",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/96a397f4fa058b46220d40fa01598a9d685a3bcf.txt",
+      "url": "https://github.com/MiCode/kernel_build/blob/3b5ab5980990c0406c68d05baecd422ad5e30b8f/kleaf/workspace.bzl"
+    },
+    {
+      "repository": "ravindu644/Droidspaces-OSS",
+      "ref": "cdadb9eb5d0f86aacffff60776333e6f6b73a30a",
+      "path": "src/cli/check.c",
+      "git_blob_sha": "fcaaa08ea760332eb710281f683513c5eeece016",
+      "decoded_utf8_sha256": "8cf6f903faaff11603a7c2946a6a7e9542fc8b4c2237c254b7f193b86db876e6",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/fcaaa08ea760332eb710281f683513c5eeece016.txt",
+      "url": "https://github.com/ravindu644/Droidspaces-OSS/blob/cdadb9eb5d0f86aacffff60776333e6f6b73a30a/src/cli/check.c"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "scripts/genksyms/genksyms.c",
+      "git_blob_sha": "f5dfdb9d80e9d5bb66f7e5e0f5b5cb4aac069d9b",
+      "decoded_utf8_sha256": "fad187c7c525d52398aa6f5e7d1a6400342123ed56b490c62b99db552a9f59bf",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/f5dfdb9d80e9d5bb66f7e5e0f5b5cb4aac069d9b.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/scripts/genksyms/genksyms.c"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "scripts/genksyms/genksyms.c",
+      "git_blob_sha": "6b0eb3898e4ec7a8a3925aa400003e77c16ab45a",
+      "decoded_utf8_sha256": "3f400ca3f93076a855ec75dd4793a2601664632628a04a8cae4042f4998e8360",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/6b0eb3898e4ec7a8a3925aa400003e77c16ab45a.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/scripts/genksyms/genksyms.c"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "mm/swap_state.c",
+      "git_blob_sha": "3e7db8ea40f33e9185eba9149f9352f82555cb48",
+      "decoded_utf8_sha256": "3faa73492b96c60af40741b348d2d9786d9c313b3ad7c3c1349a71a4c3210d3a",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/3e7db8ea40f33e9185eba9149f9352f82555cb48.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/mm/swap_state.c"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "mm/swap_state.c",
+      "git_blob_sha": "5df7763971c969bed970fd5efe34585c124270b5",
+      "decoded_utf8_sha256": "6e99de966801706da7b12a25c9cd4f129d294cf89fde3dcde9238ea08296a7e1",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/5df7763971c969bed970fd5efe34585c124270b5.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/mm/swap_state.c"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "mm/util.c",
+      "git_blob_sha": "2409c21f0354487107dc0a2973fea4ef54e863fb",
+      "decoded_utf8_sha256": "a7df8a7b094b71dcbfa3d0ad7dd0245970dbd1fcd09e5092bdd3bce62339b95a",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/2409c21f0354487107dc0a2973fea4ef54e863fb.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/mm/util.c"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "mm/util.c",
+      "git_blob_sha": "98771d2bdc67ada6f6ac96d4a4943f533c08bff0",
+      "decoded_utf8_sha256": "309161258dc294d8b00ac4bc6780653b623982b61a40cf8a2b04d0e90dcb2cb7",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/98771d2bdc67ada6f6ac96d4a4943f533c08bff0.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/mm/util.c"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "include/linux/android_kabi.h",
+      "git_blob_sha": "1fa329ee4d73e2f96e4502b60758d157677fd3d9",
+      "decoded_utf8_sha256": "b8205e5591fe0352bd33aa3d86ad5a7a3b9cf08b57bbf187b4b7d51923a47c1b",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/1fa329ee4d73e2f96e4502b60758d157677fd3d9.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/include/linux/android_kabi.h"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "include/linux/sched/signal.h",
+      "git_blob_sha": "f3461a4e6bdc99b6f527658cbacc4c05b7ecc683",
+      "decoded_utf8_sha256": "3fbd6d6f116a123a502e1e670f8381fceae17162cb0dc1cd0765076757fba4d5",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/f3461a4e6bdc99b6f527658cbacc4c05b7ecc683.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/include/linux/sched/signal.h"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "fs/Kconfig",
+      "git_blob_sha": "7d27482f8814ac0f286e24ed5994794a2fae66c0",
+      "decoded_utf8_sha256": "dbc01b88247a54caba54f569f9e10010a59ea4a0cd821a264b9aa839b8e1b4b4",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/7d27482f8814ac0f286e24ed5994794a2fae66c0.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/fs/Kconfig"
+    },
+    {
+      "repository": "MiCode/kernel_devicetree",
+      "ref": "21b354440459b84995dd7266c95cd17c0abc110c",
+      "path": "qcom/muyu-sm8635-overlay.dts",
+      "git_blob_sha": "c568fe4dfaafca6822163ced6bcebd86bce33197",
+      "decoded_utf8_sha256": "4695678a6c05196f721626d3c0fe836afe381ce97849dd4e52fb43418e8e60be",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/c568fe4dfaafca6822163ced6bcebd86bce33197.txt",
+      "url": "https://github.com/MiCode/kernel_devicetree/blob/21b354440459b84995dd7266c95cd17c0abc110c/qcom/muyu-sm8635-overlay.dts"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "Makefile",
+      "git_blob_sha": "1a63f7f6b651b242b0b8268f0ed552d7a814e873",
+      "decoded_utf8_sha256": "9abcef667e95f6e1b6545db8427c6c1fbe47fb05e1213b731280cfd9aa92c18b",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/1a63f7f6b651b242b0b8268f0ed552d7a814e873.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/Makefile"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "build.config.constants",
+      "git_blob_sha": "fa2b8497f4480bfb642f18eac858e4afee158709",
+      "decoded_utf8_sha256": "908c5b66be8e4b6ce65de36b4d8892459821fa683e8756b920aaa288c90bec33",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/fa2b8497f4480bfb642f18eac858e4afee158709.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/build.config.constants"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "build.config.common",
+      "git_blob_sha": "f9becf2d72d8b7a18fc1685fb154491754e365b3",
+      "decoded_utf8_sha256": "9bd8ed51904ef7071659f01fa24b54dadf0f7e3bcd427d20221886c9350da7b1",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/f9becf2d72d8b7a18fc1685fb154491754e365b3.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/build.config.common"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "build.config.msm.muyu",
+      "git_blob_sha": "673eb98850552032a873a4e532c1cc7c2625cb2b",
+      "decoded_utf8_sha256": "c86bf7589b2c2cc16dc76baa20baf9d5f475863a479d2535ea9fe2e30f144ba6",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/673eb98850552032a873a4e532c1cc7c2625cb2b.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/build.config.msm.muyu"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "build.config.msm.gki",
+      "git_blob_sha": "f229af185892beca4db610e4f85c448084ea585f",
+      "decoded_utf8_sha256": "1d57ef6552390905550b7fbb0d000d95790c1e75643e73e66b610709a4eee4e8",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/f229af185892beca4db610e4f85c448084ea585f.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/build.config.msm.gki"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "muyu.bzl",
+      "git_blob_sha": "ba28f91aeb07570f9a3317000b56c9979b0e88a7",
+      "decoded_utf8_sha256": "946f010e22f1bf632ef8c6bdf6db5dc89a3570eb3be644701041b8c121eab037",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/ba28f91aeb07570f9a3317000b56c9979b0e88a7.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/muyu.bzl"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "arch/arm64/configs/gki_defconfig",
+      "git_blob_sha": "5d6490f1bc359cb487cf02872ec9827aec9bf8b4",
+      "decoded_utf8_sha256": "104dcc1e1f1596d822ee3f353ababd6ba3cc8a011518c93ea1b46ad2e4c01c6d",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/5d6490f1bc359cb487cf02872ec9827aec9bf8b4.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/arch/arm64/configs/gki_defconfig"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "init/Kconfig",
+      "git_blob_sha": "8730a5b13a37b0ece57d9dcb5b813db2672a0209",
+      "decoded_utf8_sha256": "45a86aa0bbd10118da12b2b0e8cb8e2b04cc03892dd53fdb10b5644cf2cc011c",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/8730a5b13a37b0ece57d9dcb5b813db2672a0209.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/init/Kconfig"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "drivers/base/Kconfig",
+      "git_blob_sha": "6f04b831a5c0416999435424c31d01c2d9eaeb76",
+      "decoded_utf8_sha256": "6acaf6ad21b1fc3aa42e276b545034a45095e252ade77dab3d6b0f847e48e20f",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/6f04b831a5c0416999435424c31d01c2d9eaeb76.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/drivers/base/Kconfig"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "mm/Kconfig",
+      "git_blob_sha": "89e1878adef1a7fba97a7d5282d4511d57729348",
+      "decoded_utf8_sha256": "1efdcc9dd7a5a98746599e24dc4f62e69e12e055045ef279789d3d69e4cf13ff",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/89e1878adef1a7fba97a7d5282d4511d57729348.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/mm/Kconfig"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "include/linux/mm_types.h",
+      "git_blob_sha": "4e9453ab5985d4f593a497227cd136d80e21a645",
+      "decoded_utf8_sha256": "066d14a64a6da4ad1102ed554652c4c569cf1ebb9e304da667a04d533f93aca0",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/4e9453ab5985d4f593a497227cd136d80e21a645.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/include/linux/mm_types.h"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "include/linux/swap.h",
+      "git_blob_sha": "6d17e7bb330ca6bbf9107b8ac42e89e2374f784d",
+      "decoded_utf8_sha256": "8e930270852a652939ebd48981d541dd33de4b721c4f36c95aa969089f19d558",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/6d17e7bb330ca6bbf9107b8ac42e89e2374f784d.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/include/linux/swap.h"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "include/linux/pagemap.h",
+      "git_blob_sha": "bec7963f77c6d48c0b8ae0abe85a5b7a718a4dcd",
+      "decoded_utf8_sha256": "a9a17cc3214763051d32a48db62c7ba1df07c30f59df6fc162a38f593195fa81",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/bec7963f77c6d48c0b8ae0abe85a5b7a718a4dcd.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/include/linux/pagemap.h"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "arch/arm64/configs/vendor/muyu_GKI.config",
+      "git_blob_sha": "b18fc569ef126581e0e9292e0ff57f392284c0d7",
+      "decoded_utf8_sha256": "0dff8b94b6beae6b41a262cfdc7e595ceb86dd566462be3c7a12b9ec75642b59",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/b18fc569ef126581e0e9292e0ff57f392284c0d7.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/arch/arm64/configs/vendor/muyu_GKI.config"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "include/linux/mm.h",
+      "git_blob_sha": "4082f86f8f9f323fd61c7a53fc52d76bd2dd08c4",
+      "decoded_utf8_sha256": "2d1c8f8b325f7e8d29db233eb13c544a50990c5f81fab8dac30e8034512cd88d",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/4082f86f8f9f323fd61c7a53fc52d76bd2dd08c4.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/include/linux/mm.h"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "mm/swapfile.c",
+      "git_blob_sha": "ce706c4a9b38ace0fcdca5e622e4a03a65149ac1",
+      "decoded_utf8_sha256": "2a19092db516630a6ff16b202f0b0a927e0839ea3b6104aeaf60cae48ffb2694",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/ce706c4a9b38ace0fcdca5e622e4a03a65149ac1.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/mm/swapfile.c"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "include/linux/sched.h",
+      "git_blob_sha": "f5b50c82aa3a651c8110332f32db91f88005a501",
+      "decoded_utf8_sha256": "d1ada7ab19bd6ccddc13379f589ff56969d1b3beff427d22bd6a9303bb4e1cf8",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/f5b50c82aa3a651c8110332f32db91f88005a501.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/include/linux/sched.h"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "include/linux/hugetlb.h",
+      "git_blob_sha": "1c6f35ba1604f890029e30a18e1800af4697fd4d",
+      "decoded_utf8_sha256": "aecd9e8bc78d0cc56a5ac1f1472ec4ad6aecd871c5d854876ba1fa46b49d2fbd",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/1c6f35ba1604f890029e30a18e1800af4697fd4d.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/include/linux/hugetlb.h"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "build.config.msm.common",
+      "git_blob_sha": "af427a9167c62fa589343eb2ab0656bd82ba61b7",
+      "decoded_utf8_sha256": "5b15b014e6c66181145eadfd0d99e24c990b5ea85bfcd162fe2d24a982f96a28",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/af427a9167c62fa589343eb2ab0656bd82ba61b7.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/build.config.msm.common"
+    },
+    {
+      "repository": "MiCode/Xiaomi_Kernel_OpenSource",
+      "ref": "681e88870888dec258dd48b0ab8c908b303eb159",
+      "path": "README.md",
+      "git_blob_sha": "4a1deb36d391decfb6a10b0db9956304f5018cf7",
+      "decoded_utf8_sha256": "768aca8ee8c7f1c5b789b1b24a26c7ad857cdfcc1ee906de416405d4ce2275d0",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/4a1deb36d391decfb6a10b0db9956304f5018cf7.txt",
+      "url": "https://github.com/MiCode/Xiaomi_Kernel_OpenSource/blob/681e88870888dec258dd48b0ab8c908b303eb159/README.md"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "include/linux/mm_types.h",
+      "git_blob_sha": "4e9453ab5985d4f593a497227cd136d80e21a645",
+      "decoded_utf8_sha256": "066d14a64a6da4ad1102ed554652c4c569cf1ebb9e304da667a04d533f93aca0",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/4e9453ab5985d4f593a497227cd136d80e21a645.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/include/linux/mm_types.h"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "include/linux/swap.h",
+      "git_blob_sha": "9144c67622fd62193c4e95682c25be754faa2bbb",
+      "decoded_utf8_sha256": "bf841fc5094e6c4a35a9ac6ee8ccf85c7287fb7b8438017421f1d92e7b563ff4",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/9144c67622fd62193c4e95682c25be754faa2bbb.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/include/linux/swap.h"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "include/linux/mm.h",
+      "git_blob_sha": "2d0c6c23972b278278f9195f8190ff8fdbbfa783",
+      "decoded_utf8_sha256": "a50221499005ccafedcbbbf9cf346ab9d9249fe6a4d9db3fb9c26336224f8fe0",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/2d0c6c23972b278278f9195f8190ff8fdbbfa783.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/include/linux/mm.h"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "init/Kconfig",
+      "git_blob_sha": "083cb66d1be6aea0d51146d06c39be77d8b36bfc",
+      "decoded_utf8_sha256": "b3c23b18b00f26c0360bab75f4d014fbe8b4f401423685fd2a4eab194d2d763e",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/083cb66d1be6aea0d51146d06c39be77d8b36bfc.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/init/Kconfig"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "drivers/base/Kconfig",
+      "git_blob_sha": "6f04b831a5c0416999435424c31d01c2d9eaeb76",
+      "decoded_utf8_sha256": "6acaf6ad21b1fc3aa42e276b545034a45095e252ade77dab3d6b0f847e48e20f",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/6f04b831a5c0416999435424c31d01c2d9eaeb76.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/drivers/base/Kconfig"
+    },
+    {
+      "repository": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "kernel/seccomp.c",
+      "git_blob_sha": "e9852d1b4a5ec7114f0e5f68d1bb90beef0b8b0a",
+      "decoded_utf8_sha256": "dbaa4efdab114c9a2a081f672bc1d354cfb519f99d1c1a5689422fa37e2ed072",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/e9852d1b4a5ec7114f0e5f68d1bb90beef0b8b0a.txt",
+      "url": "https://github.com/aosp-mirror-neo/kernel_common/blob/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/kernel/seccomp.c"
+    },
+    {
+      "repository": "ravindu644/Droidspaces-OSS",
+      "ref": "cdadb9eb5d0f86aacffff60776333e6f6b73a30a",
+      "path": "README.md",
+      "git_blob_sha": "3054377208e73971e346e77c3e0034bd0685b628",
+      "decoded_utf8_sha256": "384416712573098ea8410795340ff6eb7fc08b0f0b55326e00b7d14c411d521f",
+      "git_blob_matches": true,
+      "snapshot": "evidence/official-audit/blobs/3054377208e73971e346e77c3e0034bd0685b628.txt",
+      "url": "https://github.com/ravindu644/Droidspaces-OSS/blob/cdadb9eb5d0f86aacffff60776333e6f6b73a30a/README.md"
+    }
+  ],
+  "note": "Hash of UTF-8 bytes returned by GitHub. git_blob_matches independently verifies exact blob identity."
+}
