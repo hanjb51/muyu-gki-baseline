@@ -1,0 +1,74 @@
+[
+  {
+    "name": "address_space",
+    "equal_direct_layout": true,
+    "stock_bytes": 240,
+    "candidate_bytes": 240
+  },
+  {
+    "name": "dma_buf",
+    "equal_direct_layout": true,
+    "stock_bytes": 304,
+    "candidate_bytes": 304
+  },
+  {
+    "name": "file",
+    "equal_direct_layout": true,
+    "stock_bytes": 264,
+    "candidate_bytes": 264
+  },
+  {
+    "name": "folio",
+    "equal_direct_layout": true,
+    "stock_bytes": 96,
+    "candidate_bytes": 96
+  },
+  {
+    "name": "inode",
+    "equal_direct_layout": true,
+    "stock_bytes": 704,
+    "candidate_bytes": 704
+  },
+  {
+    "name": "mm_struct",
+    "equal_direct_layout": true,
+    "stock_bytes": 960,
+    "candidate_bytes": 960
+  },
+  {
+    "name": "module",
+    "equal_direct_layout": true,
+    "stock_bytes": 1088,
+    "candidate_bytes": 1088
+  },
+  {
+    "name": "page",
+    "equal_direct_layout": true,
+    "stock_bytes": 64,
+    "candidate_bytes": 64
+  },
+  {
+    "name": "signal_struct",
+    "equal_direct_layout": true,
+    "stock_bytes": 1128,
+    "candidate_bytes": 1128
+  },
+  {
+    "name": "swap_extent",
+    "equal_direct_layout": true,
+    "stock_bytes": 48,
+    "candidate_bytes": 48
+  },
+  {
+    "name": "swap_info_struct",
+    "equal_direct_layout": true,
+    "stock_bytes": 296,
+    "candidate_bytes": 296
+  },
+  {
+    "name": "task_struct",
+    "equal_direct_layout": true,
+    "stock_bytes": 4800,
+    "candidate_bytes": 4800
+  }
+]

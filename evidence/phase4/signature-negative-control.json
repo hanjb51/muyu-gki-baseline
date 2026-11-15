@@ -1,0 +1,5 @@
+{
+  "file": "./6.1.138-android14-11-g7b9e94e37cfa-mi/kernel/arch/arm64/geniezone/gzvm.ko",
+  "original": "PASS",
+  "single_byte_tamper": "FAIL"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "path": "muyu-gki-phase3\\OFFICIAL_MUYU_SOURCE_AUDIT.md",
+    "sha256": "37d521bb7d469f7c445db576a91f8ee3c81945db4d013e389f76c1f5f3651d62"
+  },
+  {
+    "path": "muyu-gki-phase3\\BASELINE_REPORT.md",
+    "sha256": "a93c629e6bdadf98df06a197b58d34396fa9a52ff5f1abb189d25306f81401cc"
+  },
+  {
+    "path": "muyu-gki-phase3\\evidence\\run-3-artifact\\source-lock\\LOCK.json",
+    "sha256": "3796c4dd8e81a05de8dc8c3a4d790b42b5e1a92d36f5b2bd1bcb05eef5bd7e6c"
+  },
+  {
+    "path": "muyu-gki-phase3\\evidence\\run-3-artifact\\source-lock\\manifest.xml",
+    "sha256": "b48894a34ab86306704fec559d5a2f82a26438ad6c68520650dcc3763834d53c"
+  },
+  {
+    "path": "muyu-gki-phase3\\evidence\\run-3-artifact\\out\\analysis\\source-verification.json",
+    "sha256": "c638cd84542b44ffcf3ebe75c50f48cd7fb63709ef4ca6630656e246d432d79c"
+  },
+  {
+    "path": "muyu-gki-phase3\\evidence\\run-3-artifact\\out\\analysis\\Module.symvers",
+    "sha256": "f8772426f22c8b473a400368b1edb8d97ca2214042e865368446f4edc0f18b6a"
+  },
+  {
+    "path": "muyu-gki-phase3\\evidence\\run-3-artifact\\out\\analysis\\final.config",
+    "sha256": "e49b7ae76e9d76f2d1b834ac4d753c1a42d64b92884c1695df16d51e410bd4c4"
+  }
+]

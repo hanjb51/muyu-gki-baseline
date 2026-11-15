@@ -1,0 +1,34 @@
+{
+  "original_image_sha256": "dd875f16a86fd08cdd68903766573a33c08426afd69b4ab2efbcade1ec15922f",
+  "candidate_image_sha256": "208b4d40229d107bd1a46f90a606c306ea6fc237cbf6490ae5c07e19223896c9",
+  "candidate_exports_cross_checked_with_symvers": 8142,
+  "original_export_names_equal_candidate": true,
+  "original_module_import_comparisons": 39212,
+  "unique_original_kernel_exports_required_by_modules": 3608,
+  "original_import_crc_conflicts": 0,
+  "export_crc_equal_count": 8138,
+  "export_crc_differences": [
+    {
+      "symbol": "__page_file_index",
+      "stock": "12d686c5",
+      "candidate": "39ba4984"
+    },
+    {
+      "symbol": "add_swap_extent",
+      "stock": "3da4a325",
+      "candidate": "2a731aba"
+    },
+    {
+      "symbol": "page_swap_info",
+      "stock": "138a96b6",
+      "candidate": "b7074429"
+    },
+    {
+      "symbol": "unuse_swap_pte",
+      "stock": "2dd1c10f",
+      "candidate": "440b776b"
+    }
+  ],
+  "named_btf_records_compared": 682,
+  "named_btf_differences": 0
+}

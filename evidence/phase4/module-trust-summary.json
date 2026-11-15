@@ -1,0 +1,15 @@
+{
+  "certificate_sha256": "1ab85e414a2cdae609f86beb41f172da760df8a72ef486de320bc7c295624505",
+  "modules_checked": 120,
+  "verification_statuses": {
+    "FAIL": 60,
+    "PASS": 60
+  },
+  "signer_serials": {
+    "0xbff06489cf2317f6cd1a7fdf815a76f2b198913": 60,
+    "0x6cb88b70d15244eb36c2fe132549d0415be12b1b": 60
+  },
+  "candidate_certificate_statuses": {
+    "FAIL": 120
+  }
+}

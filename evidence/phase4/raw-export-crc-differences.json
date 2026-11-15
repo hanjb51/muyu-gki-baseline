@@ -1,0 +1,22 @@
+[
+  {
+    "symbol": "__page_file_index",
+    "stock": "12d686c5",
+    "candidate": "39ba4984"
+  },
+  {
+    "symbol": "add_swap_extent",
+    "stock": "3da4a325",
+    "candidate": "2a731aba"
+  },
+  {
+    "symbol": "page_swap_info",
+    "stock": "138a96b6",
+    "candidate": "b7074429"
+  },
+  {
+    "symbol": "unuse_swap_pte",
+    "stock": "2dd1c10f",
+    "candidate": "440b776b"
+  }
+]

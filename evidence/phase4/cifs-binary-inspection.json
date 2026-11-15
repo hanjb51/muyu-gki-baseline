@@ -1,0 +1,18 @@
+{
+  "cpio_name": "lib/modules/cifs.ko",
+  "sha256": "694d665f4a19208600b132c7a5ecdc9fc1305ce330d79abbea81513fbfdd5116",
+  "comment": "\u0000Android (10087095, +pgo, +bolt, +lto, -mlgo, based on r487747c) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362)\u0000",
+  "btf_bytes": 263163,
+  "btf_type_tag_word_occurrences": 0,
+  "btf_header": [
+    60319,
+    1,
+    0,
+    24,
+    0,
+    212084,
+    212084,
+    51055
+  ],
+  "btf_string_first_byte": 98
+}

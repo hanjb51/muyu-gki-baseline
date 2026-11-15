@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-15",
+  "baseline_unchanged": "f99f842f61b1ae660badbe97d933b3705916b9f7",
+  "official_muyu": "681e88870888dec258dd48b0ab8c908b303eb159",
+  "google_candidate": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+  "historical_ack": {
+    "commit": "0cfa80d3c398c747f9d502f5812465b082ad675a",
+    "tag": "android14-6.1-2024-02_r1",
+    "linux": "6.1.68",
+    "swapfile_blob": "ce706c4a9b38ace0fcdca5e622e4a03a65149ac1",
+    "swap_header_blob": "6d17e7bb330ca6bbf9107b8ac42e89e2374f784d"
+  },
+  "codelinaro_manifest": {
+    "repository": "CodeLinaro-mirror/la_kernel_manifest",
+    "branch": "aosp-new/common-android14-6.1-2025-06",
+    "commit": "977aade5c9020844157e9fb79865d0d21d41c0f3",
+    "path": "default.xml",
+    "blob": "9bf944b65ce2c9b5fb792afff8a935f8e6864360",
+    "oem_match": false
+  },
+  "oem_prefix_queries": {
+    "prefix": "7b9e94e37cfa",
+    "not_found_in": [
+      "MiCode/Xiaomi_Kernel_OpenSource",
+      "aosp-mirror-neo/kernel_common",
+      "CodeLinaro-mirror/la_kernel_common"
+    ],
+    "http_status": 422,
+    "global_commit_search_matches": 0,
+    "global_code_search_matches": 8,
+    "code_match_scope": "Community profiles and documentation, not source commit matches",
+    "gitiles_and_codelinaro_origin": "Access failed; not evidence of absence"
+  },
+  "provenance_artifact": {
+    "run_id": 43708070680,
+    "id": 14160087364,
+    "sha256": "c4c49179a93518658c18a81f60d4f978f64cf2c5f6cd6517ab288828963ad9ab"
+  },
+  "analysis_artifacts": [
+    {
+      "run_id": 43724800287,
+      "id": 14165289938,
+      "sha256": "87671d99d15a92a530850a8899273616b45922731b3223647cb43bee2fcb120d"
+    },
+    {
+      "run_id": 43725373429,
+      "id": 14166043900,
+      "sha256": "edd085a7c1c05118f35a9647e1a2c86cebb22a9f131d5fd5298f0c608b8735a1"
+    },
+    {
+      "run_id": 43725704320,
+      "id": 14166271110,
+      "sha256": "c66b76fab5b744ec2f418383aa90c088356cb1f0dbf9109af03f00a8d723b2df"
+    },
+    {
+      "run_id": 43726785665,
+      "id": 14166582537,
+      "commit": "277c66b8676cafbaf75f50aeed3a5cd1755b1a81",
+      "sha256": "48b9533a1b0fee8ee0fedafa99381e42c778e01c04c9b033b7695764908ebef2"
+    }
+  ],
+  "upstream_contpte_commit": "4602e5757bcceb231c3a13c36c373ad4a750eddb",
+  "caveat": "Negative source searches are scoped and not proofs of global absence. CRC reproduction controls do not prove OEM compatibility."
+}
