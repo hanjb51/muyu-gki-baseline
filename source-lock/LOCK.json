@@ -1,0 +1,182 @@
+{
+  "policy": "Pristine upstream companion GKI baseline; no Droidspaces patch or configuration change applied.",
+  "oem_exact_commit_available": false,
+  "oem_requested_commit_prefix": "7b9e94e37cfa",
+  "companion_common_commit": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+  "manifest_origin_commit": "848f8dbd7fc7c40a884b614ad29f5d89199ddaff",
+  "superproject_commit": "c5fd854d46f3fe29b89a80e5f2cf3bc643c64f20",
+  "manifest_origin_branch": "common-android14-6.1-2025-06",
+  "manifest_sha256": "ca732844452e685fbb1fffd3b59a278818725aed06216e463d96accafbc414e3",
+  "sources": [
+    {
+      "path": "build/kernel",
+      "name": "kernel/build",
+      "commit": "06f7c2ac33c6d9927613bafd95def11d18924f5e",
+      "url": "https://android.googlesource.com/kernel/build",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "common",
+      "name": "kernel/common",
+      "commit": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "url": "https://android.googlesource.com/kernel/common",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "kernel/configs",
+      "name": "kernel/configs",
+      "commit": "bd79f38685cf939ab836dd8ddd2e01506ccff47a",
+      "url": "https://android.googlesource.com/kernel/configs",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "kernel/tests",
+      "name": "kernel/tests",
+      "commit": "7b2005bacbf91c5c494abded85b3c7fea88862a8",
+      "url": "https://android.googlesource.com/kernel/tests",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "common-modules/virtual-device",
+      "name": "kernel/common-modules/virtual-device",
+      "commit": "f2eb8e837a6d6a70b65d6916829f57b5c98e99f9",
+      "url": "https://android.googlesource.com/kernel/common-modules/virtual-device",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "prebuilts/clang/host/linux-x86",
+      "name": "platform/prebuilts/clang/host/linux-x86",
+      "commit": "7775eb113f960bc69a780b621d03a715914d4bca",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8",
+      "name": "platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8",
+      "commit": "f6d40532273c8bd628b960ecc0970c7294c8d891",
+      "url": "https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "prebuilts/build-tools",
+      "name": "platform/prebuilts/build-tools",
+      "commit": "4649614b4030ad825f2e94401d04526651f44e88",
+      "url": "https://android.googlesource.com/platform/prebuilts/build-tools",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "prebuilts/clang-tools",
+      "name": "platform/prebuilts/clang-tools",
+      "commit": "f08a96e4015aed7c0341b880ccd85500b1b44a26",
+      "url": "https://android.googlesource.com/platform/prebuilts/clang-tools",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "prebuilts/kernel-build-tools",
+      "name": "kernel/prebuilts/build-tools",
+      "commit": "e905be252a53d20c52bd9e59df3ff8fdd46b9eab",
+      "url": "https://android.googlesource.com/kernel/prebuilts/build-tools",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "prebuilts/tradefed",
+      "name": "platform/tools/tradefederation/prebuilts",
+      "commit": "52121d9a4653ff92b9bd225bd417b6a288c36b58",
+      "url": "https://android.googlesource.com/platform/tools/tradefederation/prebuilts",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "prebuilts/asuite",
+      "name": "platform/prebuilts/asuite",
+      "commit": "d90d0060aedfd80f2119c1db5339a093f2758926",
+      "url": "https://android.googlesource.com/platform/prebuilts/asuite",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "tools/mkbootimg",
+      "name": "platform/system/tools/mkbootimg",
+      "commit": "615a1fced5f8e2755642d30357674d3bfa21b85e",
+      "url": "https://android.googlesource.com/platform/system/tools/mkbootimg",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "prebuilts/bazel/linux-x86_64",
+      "name": "platform/prebuilts/bazel/linux-x86_64",
+      "commit": "7bfbec9e829bbae6816d5f39aba345df76e627c1",
+      "url": "https://android.googlesource.com/platform/prebuilts/bazel/linux-x86_64",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "prebuilts/jdk/jdk11",
+      "name": "platform/prebuilts/jdk/jdk11",
+      "commit": "649eec4416e2ed6298af49a56876772767a0e5ae",
+      "url": "https://android.googlesource.com/platform/prebuilts/jdk/jdk11",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "prebuilts/ndk-r23",
+      "name": "toolchain/prebuilts/ndk/r23",
+      "commit": "19ac7e4eded12adb99d4f613490dde6dd0e72664",
+      "url": "https://android.googlesource.com/toolchain/prebuilts/ndk/r23",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "external/bazel-skylib",
+      "name": "platform/external/bazel-skylib",
+      "commit": "f998e5dc13c03f0eae9e373263d3afff0932c738",
+      "url": "https://android.googlesource.com/platform/external/bazel-skylib",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "build/bazel_common_rules",
+      "name": "platform/build/bazel_common_rules",
+      "commit": "62c496cd1d821948d2f4a7fcf702e54416e5a754",
+      "url": "https://android.googlesource.com/platform/build/bazel_common_rules",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "external/stardoc",
+      "name": "platform/external/stardoc",
+      "commit": "e83f522ee95419e55d2c5654aa6e0143beeef595",
+      "url": "https://android.googlesource.com/platform/external/stardoc",
+      "archive_sha256": "PENDING_CI_SYNC"
+    },
+    {
+      "path": "external/python/absl-py",
+      "name": "platform/external/python/absl-py",
+      "commit": "2f199605a9875340569e039657f8b4c72d51b84d",
+      "url": "https://android.googlesource.com/platform/external/python/absl-py",
+      "archive_sha256": "PENDING_CI_SYNC"
+    }
+  ],
+  "repo_tool_commit": "d7c431b9968d928373fe9b463a51d304d3b2c48a",
+  "repo_launcher_sha256": "05f571deafd6ed6da0d20fa707dde29aa5624dbf35553d697a40dbdd4c8d178a",
+  "clang_release": "r487747c",
+  "clang_prebuilt_commit": "7775eb113f960bc69a780b621d03a715914d4bca",
+  "bazel_prebuilt_commit": "7bfbec9e829bbae6816d5f39aba345df76e627c1",
+  "bazel_runtime_version": "PENDING_CI_EXECUTION",
+  "sysvipc_patch_sha256": "47fc945b2d73d9737d56c0f1c3a74cda0a95c30f9dc1b1abe546fa48940c4460",
+  "stock_config_sha256": "ab7f34194c1b5830051a87e92cad3de0e622c6c0638f6f59b0e5f709bbb09f4d",
+  "required_build_configuration": {
+    "CONFIG_MODVERSIONS": "y",
+    "CONFIG_LTO_CLANG_THIN": "y",
+    "CONFIG_CFI_CLANG": "y",
+    "CONFIG_ARM64_4K_PAGES": "y",
+    "CONFIG_ANDROID_KABI_RESERVE": "y",
+    "CONFIG_MODULE_SIG": "y",
+    "CONFIG_MODULE_SIG_ALL": "y",
+    "CONFIG_MODULE_SIG_PROTECT": "y",
+    "CONFIG_TRIM_UNUSED_KSYMS": "y"
+  },
+  "must_remain_disabled": [
+    "CONFIG_SYSVIPC",
+    "CONFIG_POSIX_MQUEUE",
+    "CONFIG_PID_NS",
+    "CONFIG_IPC_NS",
+    "CONFIG_USER_NS",
+    "CONFIG_DEVTMPFS",
+    "CONFIG_NETFILTER_XT_MATCH_ADDRTYPE",
+    "CONFIG_CFS_BANDWIDTH",
+    "CONFIG_CGROUP_PIDS"
+  ]
+}

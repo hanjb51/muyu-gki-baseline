@@ -1,0 +1,6 @@
+workspace/
+out/
+control-checkout-*/
+__pycache__/
+*.pyc
+*.zip

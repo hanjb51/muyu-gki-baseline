@@ -1,0 +1,150 @@
+name: buildGKI
+on:
+  workflow_dispatch:
+    inputs:
+      remove_abi_gki_protected_exports:
+        description: 'Remove abi_gki_protected_exports_* files'
+        type: boolean
+        default: true
+
+      lto:
+        description: 'Enable LTO (Link Time Optimization)'
+        type: choice
+        default: 'none'
+        options:
+          - 'none'
+          - 'thin'
+          - 'full'
+
+      kernel_configuration:
+        description: 'Kernel configuration (Droidspaces requires)'
+        type: boolean
+        default: true
+
+      patch:
+        description: 'Patch kernel (Droidspaces requires)'
+        type: boolean
+        default: true
+
+      patch_file:
+        description: 'Patch file path (if patch is true)'
+        type: choice
+        default: '001.GKI-below-6.12-fix_sysvipc_kabi_6_7_8.patch'
+        options:
+          - '001.GKI-below-6.12-fix_sysvipc_kabi_1_2_3.patch'
+          - '001.GKI-below-6.12-fix_sysvipc_kabi_3_4_5.patch'
+          - '001.GKI-below-6.12-fix_sysvipc_kabi_6_7_8.patch'
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v6
+
+      - name: Install dependencies
+        uses: awalsh128/cache-apt-pkgs-action@v1
+        with:
+          packages: >-
+            git curl rsync repo cpio kmod
+            build-essential gcc g++ libc6-dev
+            libssl-dev libelf-dev openssl
+            lz4 xz-utils zstd p7zip-full libarchive-tools
+            bison flex bc
+            libtinfo6 libncurses-dev libreadline-dev
+          version: 1.0
+
+      - name: Install libtinfo5
+        run: |
+          if ! dpkg -s libtinfo5 >/dev/null 2>&1; then
+            wget http://security.ubuntu.com/ubuntu/pool/universe/n/ncurses/libtinfo5_6.3-2ubuntu0.1_amd64.deb
+            sudo dpkg -i libtinfo5_6.3-2ubuntu0.1_amd64.deb
+          fi
+      
+      - name: Configure git identity
+        run: |
+            git config --global user.name "github-actions[bot]"
+            git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Install repo tool
+        run: |
+            sudo curl -sS https://storage.googleapis.com/git-repo-downloads/repo -o /usr/local/bin/repo
+            sudo chmod a+x /usr/local/bin/repo
+
+      - name: Sync kernel sources with repo
+        run: |
+          repo init -u https://android.googlesource.com/kernel/manifest -b common-android14-6.1-2025-06 --depth=1
+          repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
+      - name: Setup fragment
+        if: ${{ inputs.kernel_configuration == true }}
+        working-directory: ${{ github.workspace }}/common
+        run: |
+          cp ${{ github.workspace }}/droidspaces_requires.fragment arch/arm64/configs/
+
+      - name: Remove abi_gki_protected_exports_* files
+        if: ${{ inputs.remove_abi_gki_protected_exports == true }}
+        working-directory: ${{ github.workspace }}/common
+        run: |
+          rm android/abi_gki_protected_exports_*
+          sed -i '/protected_exports_list/d' BUILD.bazel
+
+      - name: Apply patch for Droidspaces
+        if: ${{ inputs.patch == true }}
+        working-directory: ${{ github.workspace }}/common
+        run: |
+          patch -p1 < ${{ github.workspace }}/${{ inputs.patch_file }}
+
+      - name: Git commit
+        working-directory: ${{ github.workspace }}/common
+        run: |
+          git add -A
+          git commit -am "Updated GKI kernel configuration"
+
+      - name: Build GKI kernel
+        env:
+          MAKEFLAGS: -j$(nproc)
+        run: |
+          if [ "${{ inputs.kernel_configuration }}" == "true" ]; then
+            tools/bazel run //common:kernel_aarch64_dist --config=fast --config=stamp --lto=${{ inputs.lto }} --defconfig_fragment=//common:arch/arm64/configs/droidspaces_requires.fragment -- --dist_dir=out/dist
+          else
+            tools/bazel run //common:kernel_aarch64_dist --config=fast --config=stamp --lto=${{ inputs.lto }} -- --dist_dir=out/dist
+          fi
+
+      - name: Display Info
+        run: |
+          printf "GKI kernel build completed. Displaying artifact information:\n"
+          uname -a
+          ls -lh out/dist/
+          du -sh out/
+          du -sh out/dist/
+
+      - name: Upload GKI kernel artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: Image
+          path: out/dist/Image
+            
+      - name: Upload kernel modules
+        uses: actions/upload-artifact@v4
+        with:
+          name: modules
+          path: out/dist/*.ko
+
+      - name: Upload boot.img artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: boot.img
+          path: out/dist/boot.img
+              
+      - name: Upload vmlinux artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vmlinux
+          path: out/dist/vmlinux
+      
+      - name: Upload System.map artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: System.map
+          path: out/dist/System.map

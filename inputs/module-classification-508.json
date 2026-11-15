@@ -1,0 +1,7118 @@
+[
+  {
+    "name": "6lowpan",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "8021q",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "adsp_loader_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "adsp_sleepmon",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "altmode_glink",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "aqc111",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "arm_smmu",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "asix",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "audio_pkt_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "audio_prm_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "audpkt_ion_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "aw8697_haptic",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "aw882xx_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ax88179_178a",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "bam_dma",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "bcl_pmic5",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "bcl_soc",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "binder_gki",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "binder_prio",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "block2mtd",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "bluetooth",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "boot_stats",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "bootinfo",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "bsd_comp",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "bt_fm_slim",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "btbcm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "btpower",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "btqca",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "btsdio",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "bwmon",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "c1dcvs_scmi_v2",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "camcc_cliffs",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "camcc_pineapple",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "camcc_volcano",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "camera",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cameralog",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cameramsger",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "can",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "can_bcm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "can_dev",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "can_gw",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "can_raw",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cdc_acm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cdc_eem",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cdc_ether",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cdc_ncm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cdsp_loader",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cdsprm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cfg80211",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "charger_partition",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "charger_ulog_glink",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "chipreg",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cifs",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cifs_arc4",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cifs_md4",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "clk_dummy",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "clk_qcom",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "clk_rpmh",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cmd_db",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cnss2",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cnss_nl",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cnss_plat_ipc_qmi_svc",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cnss_prealloc",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cnss_utils",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "core_hang_detect",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_csr",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_cti",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_dummy",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_funnel",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_hwevent",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_remote_etm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_replicator",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_stm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_tgu",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_tmc",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_tmc_sec",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_tpda",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_tpdm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "coresight_trace_noc",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cpq",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cpu_hotplug",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cpu_voltage_cooling",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cpucp_log",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cpufreq_stats_scmi_v2",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cqhci",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "crc_itu_t",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "crm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "crypto_qti",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cs35l41_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "cs35l43_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "dcc_v2",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "dcvs_fp",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ddr_cdev",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "debug_ext",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "debug_regulator",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "debug_symbol",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "debugcc_cliffs",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "debugcc_pineapple",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "debugcc_volcano",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "diag",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "dispcc_pineapple",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "dispcc_volcano",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "dmesg_dumper",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "dns_resolver",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "drm_display_helper",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "drm_dp_aux_bus",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "dump_display",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "dwc3_msm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "dynpf_scmi",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "eud",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "f_fs_ipc_log",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "fm_ntag_i2c",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "fpc1552",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "frpc_adsprpc",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "fs19xx_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "fsa4480_i2c",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ftdi_sio",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gcc_cliffs",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gcc_pineapple",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gcc_volcano",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gdsc_regulator",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_arm_drv",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_cpusys_vm_mem_access",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_ctrl",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_dbl",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_irq_lend",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_mem_notifier",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_msgq",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_panic_notifier",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_rm_booster",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_rm_drv",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_tlmm_vm_mem_access",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gh_virt_wdt",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gic_intr_routing",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "glink_pkt",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "glink_probe",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gpr_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gpu_dump_skip_cdev",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gpucc_cliffs",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gpucc_pineapple",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gpucc_volcano",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gsim",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gunyah_loader",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gunyah_qcom",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "gzvm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "hardwareinfo",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "hci_uart",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "hdcp_qseecom_dlkm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "hdmi_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "health_monitor",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "heap_mem_ext_v01",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "hidp",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "hung_task_enh",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "hvc_gunyah",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "hwid",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "hwkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "hwmon",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "i2c_msm_geni",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "i3c_master_msm_geni",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "icc_bcm_voter",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "icc_debug",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "icc_rpmh",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "icc_test",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "icnss2",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ieee802154",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ieee802154_6lowpan",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ieee802154_socket",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "iommu_logger",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ipam",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ipanetm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ipclite",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ipclite_test",
+    "loaded": false,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ir_spi",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "kheaders",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "unprotected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "kshrink_slabd",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "l2tp_core",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "l2tp_ppp",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "lb",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "leds_qti_flash",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "leds_qti_tri_led",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "libarc4",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "llcc_perfmon",
+    "loaded": false,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "llcc_qcom",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "lpass_cdc_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "lpass_cdc_rx_macro_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "lpass_cdc_tx_macro_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "lpass_cdc_va_macro_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "lpass_cdc_wsa2_macro_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "lpass_cdc_wsa_macro_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "lt9611uxc",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mac80211",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mac802154",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "machine_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "max31760_fan",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mbhc_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mdt_loader",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mem_buf",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mem_buf_dev",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mem_buf_msgq",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mem_hooks",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mem_offline",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "memlat",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "memory_dump_v2",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "metis",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mhi",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mhi_dev_satellite",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mhi_dev_uci",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mi_memory",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mi_mempool",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mi_power",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mi_schedule",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mi_sw_sync",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mi_thermal_interface",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "miev",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "migt",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mii",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "miicmpfilter",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "millet_binder",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "millet_core",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "millet_hs",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "millet_oem_cgroup",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "millet_pkg",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "millet_sig",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "minet",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "minidump",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mist",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "miwill",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mpam",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mpam_arch",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mpam_policy",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_dma_iommu_mapping",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_drm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_eva",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_ext_display",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_geni_serial",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_gpi",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_hw_fence",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_kgsl",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_lmh_dcvs",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_memshare",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_mmrm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_performance",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_qmp",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_sharedmem",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_show_epoch",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_show_resume_irq",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_sysstats",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "msm_video",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mtd",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mtd_blkdevs",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mtdblock",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "mtdoops",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nanosic_driver",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nb7vpq904m",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nfc",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nhc_dest",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nhc_fragment",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nhc_hop",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nhc_ipv6",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nhc_mobility",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nhc_routing",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nhc_udp",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nt36532_touch",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nvmem_qcom_spmi_sdam",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nvmem_qfprom",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "nxp_nci",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ofpart",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "panel_event_notifier",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pci_msm_drv",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pcie_pdc",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pdr_interface",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "perf_helper",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "phy_generic",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "phy_msm_snps_eusb2",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "phy_msm_ssusb_qmp",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "phy_qcom_emu",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "phy_qcom_ufs",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "phy_qcom_ufs_qmp_v4",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "phy_qcom_ufs_qmp_v4_crow",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "phy_qcom_ufs_qmp_v4_pineapple",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "phy_qcom_ufs_qrbtc_sdm845",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pinctrl_cliffs",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pinctrl_lpi_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pinctrl_msm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pinctrl_pineapple",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pinctrl_spmi_gpio",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pinctrl_spmi_mpp",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pinctrl_volcano",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pm8941_pwrkey",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pmic_glink",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pmic_glink_debug",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pmic_pon_log",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "powersave",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ppp_deflate",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ppp_generic",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ppp_mppe",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pppox",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pptp",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "proc_exit",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "proxy_consumer",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "pwm_qti_lpg",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "q6_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "q6_notifier_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "q6_pdr_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qca_cld3_kiwi_v2",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qca_cld3_qca6750",
+    "loaded": false,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qce50_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcedev_mod_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_aoss",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_cpu_vendor_hooks",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_cpucp",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_cpufreq_hw",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_cpufreq_hw_debug",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_cpuss_sleep_stats",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_dcvs",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_dload_mode",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_dma_heaps",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_edac",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_glink",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_glink_smem",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_glink_spss",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_hv_haptics",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_hwspinlock",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_i2c_pmic",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_iommu_debug",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_iommu_util",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_ipc_logging",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_ipcc",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_llcc_pmu",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_logbuf_boot_log",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_logbuf_vendor_hooks",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_lpm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_pdc",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_pil_info",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_pm8008_regulator",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_pmu_lib",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_pon",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_q6v5",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_q6v5_pas",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_ramdump",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_reboot_reason",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_rpmh",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_scm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_scmi_client",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_scmi_vendor",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_smd",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_spmi_adc5_gen3",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_spmi_pmic",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_spmi_temp_alarm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_spmi_wled",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_spss",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_stats",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_sysmon",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_tsens",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_va_minidump",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_vadc_common",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcom_wdt_core",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qcrypto_msm_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qfprom_sys",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qmi_helpers",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qnoc_cliffs",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qnoc_pineapple",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qnoc_qos",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qnoc_volcano",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qpnp_amoled_regulator",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qpnp_lcdb_regulator",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qrng_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qrtr",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qrtr_gunyah",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qrtr_mhi",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qrtr_smd",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qsee_ipc_irq_bridge",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qseecom_proxy",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_amoled_ecm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_battery_charger",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_battery_debug",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_cpufreq_cdev",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_devfreq_cdev",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_fixed_regulator",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_glink_adc",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_ocp_notifier",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_qmi_cdev",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_qmi_sensor_v2",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_regmap_debugfs",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "qti_userspace_cdev",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "r8152",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "r8153_ecm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "radio_i2c_rtc6226_qca",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rdbg",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "reboot_mode",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "redriver",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "repeater",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "repeater_qti_pmic_eusb2",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rfcomm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rfkill",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rmnet_aps",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rmnet_core",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rmnet_ctl",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rmnet_mem",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rmnet_offload",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rmnet_perf",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rmnet_perf_tether",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rmnet_sch",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rmnet_shs",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rmnet_wlan",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rpmh_regulator",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rproc_qcom_common",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rtc_pm8xxx",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "rtl8150",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sched_penalty",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sched_walt",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sdhci_msm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "secure_buffer",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sg",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "si_haptic",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sia91xx_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sia91xx_tuning_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sla",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "slcan",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "slhc",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "slim_qcom_ngd_ctrl",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "slimbus",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "smcinvoke_dlkm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "smem",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "smmu_proxy_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "smp2p",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "smp2p_sleepstate",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "snd_event_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "snd_soc_hdmi_codec",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "snd_usb_audio_qmi",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "socinfo",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "spcom",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "spf_core_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "spi_msm_geni",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "spmi_pmic_arb",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "spmi_pmic_arb_debug",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sps_drv",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "spss_utils",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "stm_console",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "stm_core",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "stm_ftrace",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "stm_heartbeat",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "stm_nfc_i2c",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "stm_p_ost",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "stm_st54se_gpio",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "stub_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "stub_regulator",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "swinfo",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "swr_ctrl_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "swr_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "swr_dmic_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "swr_haptics_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sync_fence",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "synx_driver",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sys_pm_vx",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "sysmon_subsystem_stats",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "tango32",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "tcsrcc_pineapple",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "tef668x_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "tfa986x_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "thermal_config",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "thermal_minidump",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "thermal_pause",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "tipc",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "tlv320aic3x_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "tmecom_intf",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "typec_analog_acc_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "tz_log_dlkm",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ubwcp",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ucsi_glink",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ufs_ffu",
+    "loaded": false,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ufs_qcom",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "ufshcd_crypto_qti",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "usb_f_ccid",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "usb_f_cdev",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "usb_f_gsi",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "usb_f_qdss",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "usb_f_rndis",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "usbnet",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "usbserial",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "vcan",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "videocc_pineapple",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "videocc_volcano",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd9378_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd9378_slave_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd937x_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd937x_slave_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd938x_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd938x_slave_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd939x_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd939x_slave_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd9xxx_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd_core_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wcd_usbss_i2c",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wl28661d",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wl2866d",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wlan_firmware_service",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wsa883x_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wsa884x_dlkm",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "wwan",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 2,
+    "source_classes": [
+      "GKI"
+    ],
+    "protected_source_policy": [
+      "protected"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "xiaomi_hall",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "xiaomi_keyboard_driver",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "xiaomi_touch",
+    "loaded": true,
+    "variants": 1,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "xiaomi_wifi_gpio",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "xiaomifp",
+    "loaded": true,
+    "variants": 2,
+    "distinct_file_sha256": 1,
+    "source_classes": [
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "zram",
+    "loaded": true,
+    "variants": 3,
+    "distinct_file_sha256": 3,
+    "source_classes": [
+      "GKI",
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "unprotected",
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  },
+  {
+    "name": "zsmalloc",
+    "loaded": true,
+    "variants": 3,
+    "distinct_file_sha256": 3,
+    "source_classes": [
+      "GKI",
+      "Vendor"
+    ],
+    "protected_source_policy": [
+      "unprotected",
+      "vendor"
+    ],
+    "signature_trust": "UNVERIFIED",
+    "candidate_crc_status": "NOT_BUILT"
+  }
+]

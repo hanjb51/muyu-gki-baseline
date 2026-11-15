@@ -1,0 +1,41 @@
+name: Muyu pristine GKI baseline
+on:
+  workflow_dispatch:
+  push:
+    branches: [baseline/muyu-gki]
+permissions:
+  contents: read
+concurrency:
+  group: muyu-pristine-baseline
+  cancel-in-progress: false
+jobs:
+  baseline:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 180
+    steps:
+      - name: Checkout dedicated control branch
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Install host prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git curl rsync cpio kmod build-essential libssl-dev libelf-dev openssl lz4 xz-utils zstd bison flex bc libtinfo5 libncurses-dev python3
+      - name: Build pristine GKI and run enforced ABI comparison
+        run: bash scripts/run_baseline.sh
+      - name: Render acceptance report and seal logs
+        if: always()
+        run: python3 scripts/finalize_run.py
+      - name: Preserve outputs and logs on success or failure
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: muyu-baseline-${{ github.run_id }}-${{ github.run_attempt }}
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 30
+          path: |
+            out/
+            source-lock/
+            !out/**/*signing_key.pem
+            !out/**/*.key

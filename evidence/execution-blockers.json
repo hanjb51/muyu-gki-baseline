@@ -1,0 +1,16 @@
+{
+  "baseline_compile_started": false,
+  "actions_run_id": null,
+  "actions_run_url": null,
+  "github_connector_login": "hanjb51",
+  "dedicated_fork_found": false,
+  "local_gh_auth_status": "Normal terminal login confirmed by user; sandbox cannot validate/use it.",
+  "local_git_network_error": "getaddrinfo() thread failed to start",
+  "local_bash_syntax_check": "MSYS NtCreateDirectoryObject failed: 0xC0000022",
+  "required_next_action": "Run Start-Baseline.ps1 in normal Windows PowerShell to authenticate GitHub/create dedicated fork and push the prepared branch.",
+  "no_device_access": true,
+  "no_droidspaces_feature_changes": true,
+  "user_terminal_login_confirmed": true,
+  "user_terminal_workflow_scope_confirmed": true,
+  "launcher_argument_fix": "Explicit array parameters; seven Windows PowerShell 5.1 native-process regression checks passed."
+}

@@ -1,0 +1,15 @@
+{
+  "file_variants": 790,
+  "unique_names": 508,
+  "loaded_names": 504,
+  "protected_source_policy_name_count": 57,
+  "variant_classes": {
+    "vendor": 670,
+    "protected": 114,
+    "unprotected": 6
+  },
+  "extracted_module_exports": 6300,
+  "module_exports_without_decoded_crc": 0,
+  "missing_dependency_names": 0,
+  "manifest_projects": 20
+}
