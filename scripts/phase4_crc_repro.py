@@ -87,6 +87,38 @@ for name,source in case_sources.items():
         vals=dict(re.findall(r"#SYMVER\s+(\w+)\s+(0x[0-9a-fA-F]+)",gs.stdout.decode()))
         row.update(genksyms_exit=gs.returncode,export_count=len(vals),target_crcs={s:vals.get(s) for s in ["__page_file_index","add_swap_extent"]})
     summary["cases"][name]=row
+
+# Controlled historical-header experiment. Fetch source blobs sparsely, never build.
+oldroot=ROOT/"phase4-official-sparse"
+oldroot.mkdir(exist_ok=True)
+for args in [
+ ["git","init",oldroot],
+ ["git","-C",oldroot,"remote","add","origin","https://github.com/MiCode/Xiaomi_Kernel_OpenSource.git"],
+ ["git","-C",oldroot,"sparse-checkout","init","--cone"],
+ ["git","-C",oldroot,"sparse-checkout","set","include","arch/arm64/include","mm","scripts/genksyms"],
+ ["git","-C",oldroot,"fetch","--depth=1","--filter=blob:none","origin","681e88870888dec258dd48b0ab8c908b303eb159"],
+ ["git","-C",oldroot,"checkout","--detach","FETCH_HEAD"],
+]:
+    proc=run(args)
+    if proc.returncode:raise RuntimeError(proc.stderr.decode(errors="replace"))
+summary["official_source_head"]=run(["git","-C",oldroot,"rev-parse","HEAD"]).stdout.decode().strip()
+oldflags=[clang,"--target=aarch64-linux-gnu","-E","-D__KERNEL__","-D__GENKSYMS__","-nostdinc"]
+for inc in includes:oldflags+=["-I",(WORK if "generated" in inc else oldroot)/inc]
+oldflags+=["-I",WORK/"include"]
+for header in ["include/linux/compiler-version.h","include/linux/kconfig.h","include/linux/compiler_types.h"]:oldflags+=["-include",oldroot/header]
+oldflags+=['-DKBUILD_MODNAME="swapfile"','-DKBUILD_MODFILE="mm/swapfile"','-DKBUILD_BASENAME="swapfile"']
+for name,source in {"official_c_with_official_headers":(oldroot/"mm/swapfile.c").read_text(),"candidate_c_with_official_headers":base}.items():
+    directory=OUT/name;directory.mkdir(exist_ok=True)
+    casefile=oldroot/"mm"/("phase4_"+name+".c");casefile.write_text(source)
+    pp=run(oldflags+[casefile]);(directory/"input.i").write_bytes(pp.stdout);(directory/"preprocessor.stderr").write_bytes(pp.stderr)
+    row={"preprocess_exit":pp.returncode,"preprocessed_sha256":hashlib.sha256(pp.stdout).hexdigest(),"command":[str(x) for x in oldflags+[casefile]]}
+    if pp.returncode==0:
+        gs=run([gen,"-T",directory/"types.symtypes","-r","/dev/null"],input=pp.stdout)
+        (directory/"genksyms.stdout").write_bytes(gs.stdout);(directory/"genksyms.stderr").write_bytes(gs.stderr)
+        vals=dict(re.findall(r"#SYMVER\\s+(\\w+)\\s+(0x[0-9a-fA-F]+)",gs.stdout.decode()))
+        row.update(genksyms_exit=gs.returncode,target_crcs={x:vals.get(x) for x in ["__page_file_index","add_swap_extent"]})
+    summary["cases"][name]=row
+
 expected=json.loads((WORK/"expected-candidate.json").read_text())
 summary["expected_candidate"]=expected;summary["expected_stock"]=json.loads((WORK/"expected-stock.json").read_text())
 summary["candidate_reproduces_ci"]=summary["cases"]["candidate"].get("target_crcs")==expected
