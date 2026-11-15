@@ -1,0 +1,39 @@
+name: Phase4 genksyms source analysis
+on:
+  push:
+    branches: [investigate/oem-compatibility-phase4]
+    paths:
+      - .github/workflows/phase4-crc.yml
+      - scripts/phase4_crc_repro.py
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  genksyms:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          persist-credentials: false
+      - name: Read original CI artifact from this repository
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api repos/hanjb51/muyu-gki-baseline/actions/artifacts/14160087364/zip > original-ci.zip
+      - name: Preprocess public source and replay exact CI genksyms
+        run: python3 scripts/phase4_crc_repro.py
+      - name: Retain source analysis evidence only
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: phase4-genksyms-${{ github.run_id }}
+          retention-days: 30
+          if-no-files-found: error
+          path: |
+            phase4-results/SUMMARY.json
+            phase4-results/clang-version.txt
+            phase4-results/**/preprocessor.stderr
+            phase4-results/**/genksyms.stdout
+            phase4-results/**/genksyms.stderr
+            phase4-results/**/types.symtypes
