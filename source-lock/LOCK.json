@@ -6,7 +6,7 @@
   "manifest_origin_commit": "848f8dbd7fc7c40a884b614ad29f5d89199ddaff",
   "superproject_commit": "c5fd854d46f3fe29b89a80e5f2cf3bc643c64f20",
   "manifest_origin_branch": "common-android14-6.1-2025-06",
-  "manifest_sha256": "62ddc54d491a788702ae6e7000055fe06ab726016d9636afda2ec3555a816d69",
+  "manifest_sha256": "b48894a34ab86306704fec559d5a2f82a26438ad6c68520650dcc3763834d53c",
   "sources": [
     {
       "path": "build/kernel",
