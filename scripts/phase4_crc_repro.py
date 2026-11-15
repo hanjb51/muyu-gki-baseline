@@ -119,6 +119,27 @@ for name,source in {"official_c_with_official_headers":(oldroot/"mm/swapfile.c")
         row.update(genksyms_exit=gs.returncode,target_crcs={x:vals.get(x) for x in ["__page_file_index","add_swap_extent"]})
     summary["cases"][name]=row
 
+
+# Type-tag controls act on analysis inputs only; no compiled source is changed.
+candidate_i=(OUT/"candidate/input.i").read_bytes()
+tag_pattern=rb'__attribute__\s*\(\s*\(\s*btf_type_tag\s*\(\s*"[^"]+"\s*\)\s*\)\s*\)'
+for name,ppdata in {
+ "preprocessed_without_btf_type_tags":re.sub(tag_pattern,b"",candidate_i),
+}.items():
+    directory=OUT/name;directory.mkdir(exist_ok=True)
+    gs=run([gen,"-T",directory/"types.symtypes","-r","/dev/null"],input=ppdata)
+    (directory/"genksyms.stdout").write_bytes(gs.stdout);(directory/"genksyms.stderr").write_bytes(gs.stderr)
+    vals=dict(re.findall(r"#SYMVER\s+(\w+)\s+(0x[0-9a-fA-F]+)",gs.stdout.decode()))
+    summary["cases"][name]={"preprocess_exit":0,"genksyms_exit":gs.returncode,"preprocessed_sha256":hashlib.sha256(ppdata).hexdigest(),"removed_tag_count":len(re.findall(tag_pattern,candidate_i)),"target_crcs":{x:vals.get(x) for x in ["__page_file_index","add_swap_extent"]}}
+directory=OUT/"preprocessor_bindgen_control";directory.mkdir(exist_ok=True)
+pp=run(flags+["-D__BINDGEN__",WORK/"mm/phase4_candidate.c"])
+(directory/"preprocessor.stderr").write_bytes(pp.stderr)
+if pp.returncode==0:
+    gs=run([gen,"-T",directory/"types.symtypes","-r","/dev/null"],input=pp.stdout)
+    (directory/"genksyms.stdout").write_bytes(gs.stdout);(directory/"genksyms.stderr").write_bytes(gs.stderr)
+    vals=dict(re.findall(r"#SYMVER\s+(\w+)\s+(0x[0-9a-fA-F]+)",gs.stdout.decode()))
+    summary["cases"]["preprocessor_bindgen_control"]={"preprocess_exit":pp.returncode,"genksyms_exit":gs.returncode,"preprocessed_sha256":hashlib.sha256(pp.stdout).hexdigest(),"target_crcs":{x:vals.get(x) for x in ["__page_file_index","add_swap_extent"]}}
+
 expected=json.loads((WORK/"expected-candidate.json").read_text())
 summary["expected_candidate"]=expected;summary["expected_stock"]=json.loads((WORK/"expected-stock.json").read_text())
 summary["candidate_reproduces_ci"]=summary["cases"]["candidate"].get("target_crcs")==expected
