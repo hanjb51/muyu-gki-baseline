@@ -161,6 +161,32 @@ for name,content in sources.items():
         row["target_crcs"]={x:vals.get(x) for x in ["__page_file_index","add_swap_extent"]}
     summary["host_tool_controls"][name]=row
 
+
+# Rebuild the complete old generator, including its matching grammar and headers.
+# The earlier official_genksyms_c case is explicitly a hybrid diagnostic, not an old-tool release.
+summary["host_tool_controls"]["official_genksyms_c"]["scope"]="hybrid C-file-only substitution; not a matched historical tool build"
+oldsrc=oldroot/"scripts/genksyms";oldbuild=ROOT/"phase4-old-genksyms";oldbuild.mkdir(exist_ok=True)
+row={"scope":"complete matching official genksyms sources","source_hashes":{p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in oldsrc.iterdir() if p.is_file()}}
+if not shutil.which("bison") or not shutil.which("flex"):
+    install=run(["sudo","apt-get","update"])
+    install=run(["sudo","apt-get","install","-y","bison","flex"])
+    if install.returncode:raise RuntimeError(install.stderr.decode(errors="replace"))
+row["tool_versions"]={n:run([n,"--version"]).stdout.decode().splitlines()[0] for n in ["gcc","bison","flex"]}
+commands=[
+ ["bison","-d","-o",oldbuild/"parse.tab.c",oldsrc/"parse.y"],
+ ["flex","-o",oldbuild/"lex.lex.c",oldsrc/"lex.l"],
+ ["gcc","-O2","-D_GNU_SOURCE","-I",oldsrc,"-I",oldbuild,oldsrc/"genksyms.c",oldbuild/"parse.tab.c",oldbuild/"lex.lex.c","-o",oldbuild/"genksyms"]
+]
+for cmd in commands:
+    p=run(cmd)
+    if p.returncode:raise RuntimeError(p.stderr.decode(errors="replace"))
+directory=OUT/"complete_official_genksyms";directory.mkdir(exist_ok=True)
+gs=run([oldbuild/"genksyms","-T",directory/"types.symtypes","-r","/dev/null"],input=candidate_i)
+(directory/"genksyms.stdout").write_bytes(gs.stdout);(directory/"genksyms.stderr").write_bytes(gs.stderr)
+vals=dict(re.findall(r"#SYMVER\s+(\w+)\s+(0x[0-9a-fA-F]+)",gs.stdout.decode()))
+row.update(compile_exit=0,genksyms_exit=gs.returncode,executable_sha256=hashlib.sha256((oldbuild/"genksyms").read_bytes()).hexdigest(),target_crcs={x:vals.get(x) for x in ["__page_file_index","add_swap_extent"]})
+summary["host_tool_controls"]["complete_official_genksyms"]=row
+
 expected=json.loads((WORK/"expected-candidate.json").read_text())
 summary["expected_candidate"]=expected;summary["expected_stock"]=json.loads((WORK/"expected-stock.json").read_text())
 summary["candidate_reproduces_ci"]=summary["cases"]["candidate"].get("target_crcs")==expected
