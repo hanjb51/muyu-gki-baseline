@@ -21,7 +21,7 @@ with zipfile.ZipFile(CI_ZIP) as z, tarfile.open(BUNDLE,"w:gz") as dest:
         dest.addfile(info,io.BytesIO(data));records[name]={"path":name,"sha256":hashlib.sha256(data).hexdigest(),"bytes":len(data)}
     for archive,select in [
       ("out/dist/kernel-headers.tar.gz",lambda n:n.startswith("include/") or n.startswith("arch/arm64/include/")),
-      ("out/dist/modules_prepare_outdir.tar.gz",lambda n:n.startswith(("include/generated/","include/config/","arch/arm64/include/generated/")) or n in [".config","scripts/genksyms/genksyms"])]:
+      ("out/dist/modules_prepare_outdir.tar.gz",lambda n:n.startswith(("include/generated/","include/config/","arch/arm64/include/generated/")) or n in [".config","scripts/genksyms/genksyms","scripts/genksyms/lex.lex.c","scripts/genksyms/parse.tab.c","scripts/genksyms/parse.tab.h"])]:
         with tarfile.open(fileobj=io.BytesIO(z.read(archive))) as t:
             for m in t:
                 name=m.name.removeprefix("kernel-headers/").removeprefix("./")
@@ -139,6 +139,27 @@ if pp.returncode==0:
     (directory/"genksyms.stdout").write_bytes(gs.stdout);(directory/"genksyms.stderr").write_bytes(gs.stderr)
     vals=dict(re.findall(r"#SYMVER\s+(\w+)\s+(0x[0-9a-fA-F]+)",gs.stdout.decode()))
     summary["cases"]["preprocessor_bindgen_control"]={"preprocess_exit":pp.returncode,"genksyms_exit":gs.returncode,"preprocessed_sha256":hashlib.sha256(pp.stdout).hexdigest(),"target_crcs":{x:vals.get(x) for x in ["__page_file_index","add_swap_extent"]}}
+
+
+# Compile only the small host genksyms utility as an independent tool control.
+native=ROOT/"phase4-host-genksyms";native.mkdir(exist_ok=True)
+for path in ["genksyms.c","genksyms.h","keywords.c"]:
+    url="https://raw.githubusercontent.com/aosp-mirror-neo/kernel_common/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad/scripts/genksyms/"+path
+    (native/path).write_bytes(urllib.request.urlopen(url,timeout=90).read())
+for path in ["lex.lex.c","parse.tab.c","parse.tab.h"]:shutil.copyfile(WORK/"scripts/genksyms"/path,native/path)
+summary["host_tool_controls"]={}
+sources={"rebuilt_candidate":(native/"genksyms.c").read_bytes(),"official_genksyms_c":urllib.request.urlopen("https://raw.githubusercontent.com/MiCode/Xiaomi_Kernel_OpenSource/681e88870888dec258dd48b0ab8c908b303eb159/scripts/genksyms/genksyms.c",timeout=90).read()}
+for name,content in sources.items():
+    c=native/(name+".c");c.write_bytes(content);exe=native/name
+    built=run(["gcc","-O2","-D_GNU_SOURCE","-I",native,c,native/"parse.tab.c",native/"lex.lex.c","-o",exe])
+    row={"compile_exit":built.returncode,"compile_stderr":built.stderr.decode(errors="replace"),"source_sha256":hashlib.sha256(content).hexdigest()}
+    if built.returncode==0:
+        directory=OUT/name;directory.mkdir(exist_ok=True)
+        gs=run([exe,"-T",directory/"types.symtypes","-r","/dev/null"],input=candidate_i)
+        (directory/"genksyms.stdout").write_bytes(gs.stdout);(directory/"genksyms.stderr").write_bytes(gs.stderr)
+        vals=dict(re.findall(r"#SYMVER\s+(\w+)\s+(0x[0-9a-fA-F]+)",gs.stdout.decode()))
+        row["target_crcs"]={x:vals.get(x) for x in ["__page_file_index","add_swap_extent"]}
+    summary["host_tool_controls"][name]=row
 
 expected=json.loads((WORK/"expected-candidate.json").read_text())
 summary["expected_candidate"]=expected;summary["expected_stock"]=json.loads((WORK/"expected-stock.json").read_text())
