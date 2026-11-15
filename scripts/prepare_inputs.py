@@ -19,6 +19,9 @@ sources=[]
 for project in manifest.findall('project'):
     path=project.get('path');revision=revisions.pop(path)
     project.set('revision',revision)
+    # Fetch immutable objects without depending on historical branch availability.
+    project.attrib.pop('upstream',None)
+    project.attrib.pop('dest-branch',None)
     sources.append({'path':path,'name':project.get('name'),'commit':revision,
                     'url':'https://android.googlesource.com/'+project.get('name'),
                     'archive_sha256':'PENDING_CI_SYNC'})

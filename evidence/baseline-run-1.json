@@ -1,0 +1,14 @@
+{
+  "run_id": 43707237862,
+  "control_commit": "3318421c0ad4d8c1fb7292c80b5e4f4cbd21f418",
+  "result": "FAILED_BEFORE_COMPILATION",
+  "stage": "repo sync",
+  "error": "fatal: couldn't find remote ref refs/heads/android14-6.1-2025-06",
+  "artifact_id": 14159375660,
+  "artifact_zip_sha256": "400fd82e24e2806c06b0bcd17c1d93b6ab8b41f20ca4c7c8cd78830bddc6b428",
+  "correction": "Remove historical upstream/dest-branch hints; preserve all 20 immutable project commit revisions and source verification.",
+  "new_manifest_sha256": "62ddc54d491a788702ae6e7000055fe06ab726016d9636afda2ec3555a816d69",
+  "kernel_built": false,
+  "abi_verified": false,
+  "device_access": false
+}
