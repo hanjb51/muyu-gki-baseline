@@ -1,0 +1,9 @@
+{
+  "anchors": [
+    "__page_file_index",
+    "page_swap_info",
+    "unuse_swap_pte"
+  ],
+  "all_recover_identical": true,
+  "limits": "No reference vmlinux or Module.symvers; matching anchors do not substitute for full ELF/STG ABI validation."
+}

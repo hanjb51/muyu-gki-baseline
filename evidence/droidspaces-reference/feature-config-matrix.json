@@ -1,0 +1,236 @@
+[
+  {
+    "symbol": "CONFIG_SYSVIPC",
+    "reference": "y",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_POSIX_MQUEUE",
+    "reference": "y",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_IPC_NS",
+    "reference": "y",
+    "stock": "MISSING",
+    "candidate": "MISSING"
+  },
+  {
+    "symbol": "CONFIG_PID_NS",
+    "reference": "y",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_USER_NS",
+    "reference": "y",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_UTS_NS",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_NET_NS",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_CGROUPS",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_CGROUP_PIDS",
+    "reference": "n",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_CGROUP_FREEZER",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_CGROUP_BPF",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_DEVTMPFS",
+    "reference": "y",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_DEVTMPFS_MOUNT",
+    "reference": "y",
+    "stock": "MISSING",
+    "candidate": "MISSING"
+  },
+  {
+    "symbol": "CONFIG_SECCOMP",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_NAMESPACES",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_MODVERSIONS",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_MODULE_SIG",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_MODULE_SIG_FORCE",
+    "reference": "n",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_MODULE_SIG_PROTECT",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_SECCOMP_FILTER",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_CGROUP_DEVICE",
+    "reference": "n",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_MEMCG",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_CFS_BANDWIDTH",
+    "reference": "n",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_TMPFS",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_TMPFS_XATTR",
+    "reference": "y",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_TMPFS_POSIX_ACL",
+    "reference": "y",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_PROC_FS",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_SYSFS",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_EPOLL",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_SIGNALFD",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_TIMERFD",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_INOTIFY_USER",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_FHANDLE",
+    "reference": "n",
+    "stock": "n",
+    "candidate": "n"
+  },
+  {
+    "symbol": "CONFIG_KVM",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_VETH",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_BRIDGE",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_OVERLAY_FS",
+    "reference": "y",
+    "stock": "y",
+    "candidate": "y"
+  },
+  {
+    "symbol": "CONFIG_ARM64_CONTPTE",
+    "reference": "MISSING",
+    "stock": "y",
+    "candidate": "MISSING"
+  },
+  {
+    "symbol": "CONFIG_XIAOMI_DMABUF_HUGETLB",
+    "reference": "MISSING",
+    "stock": "y",
+    "candidate": "MISSING"
+  }
+]

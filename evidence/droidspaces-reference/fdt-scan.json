@@ -1,0 +1,4 @@
+{
+  "valid_flattened_device_tree_candidates": [],
+  "method": "scan FDT magic and validate v16+ header bounds; absence is not an exhaustive disassembly proof"
+}

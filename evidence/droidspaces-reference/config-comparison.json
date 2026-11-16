@@ -1,0 +1,231 @@
+{
+  "config_sha256": {
+    "reference": "f4f39b362b7fa47e99a02db1b4df1d69be0bb58ad2987bdbcc8ed798bbe1aabb",
+    "stock": "a53a5e0e25310a1e262838c93243fffa8381038f57a93c5bf447c64a80d55ae8",
+    "candidate": "e49b7ae76e9d76f2d1b834ac4d753c1a42d64b92884c1695df16d51e410bd4c4"
+  },
+  "rows": [
+    {
+      "symbol": "CONFIG_ARM64_CONTPTE",
+      "reference": "MISSING",
+      "stock": "y",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_DEVTMPFS",
+      "reference": "y",
+      "stock": "n",
+      "candidate": "n"
+    },
+    {
+      "symbol": "CONFIG_DEVTMPFS_MOUNT",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_DEVTMPFS_SAFE",
+      "reference": "n",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_FACTORY_BUILD",
+      "reference": "MISSING",
+      "stock": "n",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_GKI_HACKS_FOR_DEBUG_CONFIG",
+      "reference": "MISSING",
+      "stock": "n",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_IPC_NS",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KPM",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_DEBUG",
+      "reference": "n",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_DISABLE_MANAGER",
+      "reference": "n",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_DISABLE_POLICY",
+      "reference": "n",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_FULL_NAME_FORMAT",
+      "reference": "\"%TAG_NAME%-%COMMIT_SHA%@%REPO_NAME%\"",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_MANUAL_HOOK",
+      "reference": "n",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_MULTI_MANAGER_SUPPORT",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_SUSFS",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_SUSFS_ENABLE_LOG",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_SUSFS_HIDE_KSU_SUSFS_SYMBOLS",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_SUSFS_OPEN_REDIRECT",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_SUSFS_SPOOF_CMDLINE_OR_BOOTCONFIG",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_SUSFS_SPOOF_UNAME",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_SUSFS_SUS_KSTAT",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_SUSFS_SUS_MAP",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_SUSFS_SUS_MOUNT",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_SUSFS_SUS_PATH",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_TOOLKIT_SUPPORT",
+      "reference": "n",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_KSU_TRACEPOINT_HOOK",
+      "reference": "n",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_PID_NS",
+      "reference": "y",
+      "stock": "n",
+      "candidate": "n"
+    },
+    {
+      "symbol": "CONFIG_POSIX_MQUEUE",
+      "reference": "y",
+      "stock": "n",
+      "candidate": "n"
+    },
+    {
+      "symbol": "CONFIG_POSIX_MQUEUE_SYSCTL",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_SYSVIPC",
+      "reference": "y",
+      "stock": "n",
+      "candidate": "n"
+    },
+    {
+      "symbol": "CONFIG_SYSVIPC_COMPAT",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_SYSVIPC_SYSCTL",
+      "reference": "y",
+      "stock": "MISSING",
+      "candidate": "MISSING"
+    },
+    {
+      "symbol": "CONFIG_TMPFS_POSIX_ACL",
+      "reference": "y",
+      "stock": "n",
+      "candidate": "n"
+    },
+    {
+      "symbol": "CONFIG_TMPFS_XATTR",
+      "reference": "y",
+      "stock": "n",
+      "candidate": "n"
+    },
+    {
+      "symbol": "CONFIG_USER_NS",
+      "reference": "y",
+      "stock": "n",
+      "candidate": "n"
+    },
+    {
+      "symbol": "CONFIG_XIAOMI_DMABUF_HUGETLB",
+      "reference": "MISSING",
+      "stock": "y",
+      "candidate": "MISSING"
+    }
+  ]
+}

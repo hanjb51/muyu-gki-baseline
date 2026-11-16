@@ -1,0 +1,123 @@
+{
+  "status": "ahead",
+  "ahead_by": 9,
+  "behind_by": 0,
+  "base": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+  "head": "23d7c6efa1683634931690f4df06f025bdcc20d1",
+  "commits": [
+    {
+      "sha": "2c328fe2834e9f228623dd46c0d5bac7f7638f7a",
+      "date": "2025-12-16T17:50:30Z",
+      "message": "ANDROID: arm64: Disable MTE at EL1 and EL0 when not supported or disabled\n\nIf MTE is not supported by the hardware, or disabled in the kernel\nconfiguration or in the command line. it should be disabled. If hardware\nsupports MTE, but it is disabled by software, this could result in a\nbuggy or a malicious host using the Memory Tag Extention, crashing the\nsystem, or compromising guests.\n\nDisable Memory Tagging altogether by trapping it to EL2 if it's not\nsupported or disabled at the host.\n\nBug: 459479964\nChange-Id: If539d9366e5c06155f63d6aea9bef123c8bc251d\nSigned-off-by: Fuad Tabba <tabba@google.com>\n(cherry picked from commit 652b7b6bf9a62cc12c3a071bab4e92314f046739)\nSigned-off-by: Lee Jones <joneslee@google.com>"
+    },
+    {
+      "sha": "120ccca142551d12730c38ebb3a9d13045fd7754",
+      "date": "2025-12-16T17:51:53Z",
+      "message": "ANDROID: KVM: arm64: Disable Memory Tagging for all guests if not supported\n\nCurrently, pKVM trusts the host for the state of HCR_EL2, which controls\nMemory Tagging, for non-protected guests. However, if Memory Tagging is\ndisabled for the host, a buggy or a malicious host could enable it for\nits (non-protected) guests.\n\nAvoid this from happening by always disabling it for all guests when\nactivating traps.\n\nNote: An upcoming patch going upstream will solve this by ensuring that\nHCR_ATA (which enabled Memory Tagging) is not set to begin with. For\nnow, let's use the more aggressive approach to ensure we don't miss\nanything. Drop this patch once the upstream one is in.\n\nBug: 459479964\nChange-Id: I05ea9655ceadcbdf46ca9f63d8dcecd333d3e91c\nSigned-off-by: Fuad Tabba <tabba@google.com>\n(cherry picked from commit b23a5bfa1fb8f9525e21f095a87486a2bd856321)\nSigned-off-by: Lee Jones <joneslee@google.com>"
+    },
+    {
+      "sha": "2ecae636cf9be43fdfe04adb25b2c2987838955a",
+      "date": "2026-01-07T15:05:02Z",
+      "message": "UPSTREAM: af_unix: Initialise scc_index in unix_add_edge().\n\n[ Upstream commit 60e6489f8e3b086bd1130ad4450a2c112e863791 ]\n\nQuang Le reported that the AF_UNIX GC could garbage-collect a\nreceive queue of an alive in-flight socket, with a nice repro.\n\nThe repro consists of three stages.\n\n  1)\n    1-a. Create a single cyclic reference with many sockets\n    1-b. close() all sockets\n    1-c. Trigger GC\n\n  2)\n    2-a. Pass sk-A to an embryo sk-B\n    2-b. Pass sk-X to sk-X\n    2-c. Trigger GC\n\n  3)\n    3-a. accept() the embryo sk-B\n    3-b. Pass sk-B to sk-C\n    3-c. close() the in-flight sk-A\n    3-d. Trigger GC\n\nAs of 2-c, sk-A and sk-X are linked to unix_unvisited_vertices,\nand unix_walk_scc() groups them into two different SCCs:\n\n  unix_sk(sk-A)->vertex->scc_index = 2 (UNIX_VERTEX_INDEX_START)\n  unix_sk(sk-X)->vertex->scc_index = 3\n\nOnce GC completes, unix_graph_grouped is set to true.\nAlso, unix_graph_maybe_cyclic is set to true due to sk-X's\ncyclic self-reference, which makes close() trigger GC.\n\nAt 3-b, unix_add_edge() allocates unix_sk(sk-B)->vertex and\nlinks it to unix_unvisited_vertices.\n\nunix_update_graph() is called at 3-a. and 3-b., but neither\nunix_graph_grouped nor unix_graph_maybe_cyclic is changed\nbecause both sk-B's listener and sk-C are not in-flight.\n\n3-c decrements sk-A's file refcnt to 1.\n\nSince unix_graph_grouped is true at 3-d, unix_walk_scc_fast()\nis finally called and iterates 3 sockets sk-A, sk-B, and sk-X:\n\n  sk-A -> sk-B (-> sk-C)\n  sk-X -> sk-X\n\nThis is totally fine.  All of them are not yet close()d and\nshould be grouped into different SCCs.\n\nHowever, unix_vertex_dead() misjudges that sk-A and sk-B are\nin the same SCC and sk-A is dead.\n\n  unix_sk(sk-A)->scc_index == unix_sk(sk-B)->scc_index <-- Wrong!\n  &&\n  sk-A's file refcnt == unix_sk(sk-A)->vertex->out_degree\n                                       ^-- 1 in-flight count for sk-B\n  -> sk-A is dead !?\n\nThe problem is that unix_add_edge() does not initialise scc_index.\n\nStage 1) is used for heap spraying, making a newly allocated\nvertex have vertex->scc_index == 2 (UNIX_VERTEX_INDEX_START)\nset by unix_walk_scc() at 1-c.\n\nLet's track the max SCC index from the previous unix_walk_scc()\ncall and assign the max + 1 to a new vertex's scc_index.\n\nThis way, we can continue to avoid Tarjan's algorithm while\npreventing misjudgments.\n\nBug: 463258435\nFixes: ad081928a8b0 (\"af_unix: Avoid Tarjan's algorithm if unnecessary.\")\nReported-by: Quang Le <quanglex97@gmail.com>\nSigned-off-by: Kuniyuki Iwashima <kuniyu@google.com>\nLink: https://patch.msgid.link/20251109025233.3659187-1-kuniyu@google.com\nSigned-off-by: Paolo Abeni <pabeni@redhat.com>\nSigned-off-by: Sasha Levin <sashal@kernel.org>\n(cherry picked from commit 4cd8d755c7d4f515dd9abf483316aca2f1b7b0f3)\nSigned-off-by: Lee Jones <joneslee@google.com>\nChange-Id: Ia8b992ad368637aa016a9a5bc5589353357e9dd7"
+    },
+    {
+      "sha": "e0543bc91ec6b06b9290376354b12dcc537af031",
+      "date": "2026-03-30T10:52:03Z",
+      "message": "FROMGIT: HID: logitech-hidpp: Prevent use-after-free on force feedback initialisation failure\n\nPresently, if the force feedback initialisation fails when probing the\nLogitech G920 Driving Force Racing Wheel for Xbox One, an error number\nwill be returned and propagated before the userspace infrastructure\n(sysfs and /dev/input) has been torn down.  If userspace ignores the\nerrors and continues to use its references to these dangling entities, a\nUAF will promptly follow.\n\nWe have 2 options; continue to return the error, but ensure that all of\nthe infrastructure is torn down accordingly or continue to treat this\ncondition as a warning by emitting the message but returning success.\nIt is thought that the original author's intention was to emit the\nwarning but keep the device functional, less the force feedback feature,\nso let's go with that.\n\nBug: 482992246\nSigned-off-by: Lee Jones <lee@kernel.org>\nReviewed-by: Günther Noack <gnoack@google.com>\nSigned-off-by: Benjamin Tissoires <bentiss@kernel.org>\n(cherry picked from commit f7a4c78bfeb320299c1b641500fe7761eadbd101) # HID\nSigned-off-by: Lee Jones <joneslee@google.com>\nChange-Id: I2d2148fc1fd977b47e07523ee977070dbfa149b5"
+    },
+    {
+      "sha": "448a78cca336fad321a90e2fa0ae410a6ad25458",
+      "date": "2026-04-14T10:56:48Z",
+      "message": "ANDROID: 16K: improve robustness of vma padding logic\n\nClear the VM_PAD_MASK in copy_vma() to ensure that duplicated VMAs do\nnot inherit padding metadata from the source VMA. This preserves the\nproperty that padding is only defined for the original mappings\ncreated by the dynamic linker and avoids potential inconsistency\nwhen remapped or copied ranges are smaller than the original.\n\nAdd a validation check in vma_pad_pages() to ensure the padding count\nis always strictly less than the total number of pages in the VMA.\nThis ensures the returned padding count remains consistent with the\ncurrent VMA size and prevents any invalid data page calculations.\n\nUpdate the linker_ctx() check by verifying the absolute paths of the\ndynamic linker binaries. This ensures that the kernel correctly\nidentifies the dynamic loader context and ensures the migration\nlogic is only triggered in the intended environment.\n\nLimit the application of padding pages to MAP_PRIVATE mappings in\nmadvise_vma_pad_pages(). This restriction ensures the logic is only\napplied to the private segment mappings used by the dynamic linker\nduring ELF loading.\n\nBug: 498369302\nChange-Id: Ifc9712b9ec80d32a21fa6c33a666e2ffb515f163\nSigned-off-by: Kalesh Singh <kaleshsingh@google.com>\n(cherry picked from commit 66044bcf67fccd02311c0030f04ba5f5e7197b8e)\nSigned-off-by: Lee Jones <joneslee@google.com>"
+    },
+    {
+      "sha": "c9350c1911559a19eeee36f00904d512c10965a1",
+      "date": "2026-04-20T12:40:46Z",
+      "message": "FROMGIT: HID: logitech-dj: Standardise hid_report_enum variable nomenclature\n\nSince we will need to differentiate between the two report_enum types\nsoon, let's unify the naming conventions now to save confusion and/or\nunnecessary/unrelated changes in upcoming commits.\n\n{input,output}_report_enum is used in other places to let's conform.\n\nBug: 489036052\nSigned-off-by: Lee Jones <lee@kernel.org>\nSigned-off-by: Jiri Kosina <jkosina@suse.com>\n(cherry picked from commit a940aee176437046598dfc786b719bd96db3c74c)\nSigned-off-by: Lee Jones <joneslee@google.com>\nChange-Id: I1492edb486341b27be10152b1f8cdff35968a399"
+    },
+    {
+      "sha": "3afd7947db0b8985555f135f36a642f2ef745341",
+      "date": "2026-04-20T12:41:06Z",
+      "message": "FROMGIT: HID: logitech-dj: Prevent REPORT_ID_DJ_SHORT related user initiated OOB write\n\nlogi_dj_recv_send_report() assumes that all incoming REPORT_ID_DJ_SHORT\nreports are 14 Bytes (DJREPORT_SHORT_LENGTH - 1) long.  It uses that\nassumption to load the associated field's 'value' array with 14 Bytes of\ndata.  However, if a malicious user only sends say 1 Byte of data,\n'report_count' will be 1 and only 1 Byte of memory will be allocated to\nthe 'value' Byte array.  When we come to populate 'value[1-13]' we will\nexperience an OOB write.\n\nBug: 489036052\nSigned-off-by: Lee Jones <lee@kernel.org>\nSigned-off-by: Jiri Kosina <jkosina@suse.com>\n(cherry picked from commit b6a57912854e7ea36f3b270032661140cc4209cd)\nSigned-off-by: Lee Jones <joneslee@google.com>\nChange-Id: I71ea1ce81a2f7b1b120a359bd3eb781b00f2e186"
+    },
+    {
+      "sha": "b736d0489dcde491f3fb9e8a1ab814845924f1f7",
+      "date": "2026-04-20T12:41:24Z",
+      "message": "FROMGIT: HID: logitech-dj: fix wrong detection of bad DJ_SHORT output report\n\ncommit b6a57912854e (\"HID: logitech-dj: Prevent REPORT_ID_DJ_SHORT\nrelated user initiated OOB write\") assumed that all HID devices attached\nto the logitech-dj driver was having an output report of DJ_SHORT.\n\nHowever, on the receiver itself, we have 2 other HID device we attach\nhere: the mouse emulation and the keyboard emulation. For those devices\nthe value of rep is NULL and we are triggered a segfault here.\n\nThis is doubly required because logitech-dj also handles non DJ devices\nthat might not have the DJ collection.\n\nBug: 489036052\nFixes: b6a57912854e (\"HID: logitech-dj: Prevent REPORT_ID_DJ_SHORT related user initiated OOB write\")\nSigned-off-by: Benjamin Tissoires <bentiss@kernel.org>\nSigned-off-by: Jiri Kosina <jkosina@suse.com>\n(cherry picked from commit 8b9a097eb2fc37b486afd81388c693bf3ab44466)\nSigned-off-by: Lee Jones <joneslee@google.com>\nChange-Id: Ib09a1bb4f63429ace7868434c944723d8b1360a8"
+    },
+    {
+      "sha": "23d7c6efa1683634931690f4df06f025bdcc20d1",
+      "date": "2026-04-27T14:19:25Z",
+      "message": "ANDROID: fuse: Use vma_set_file() in fuse_backing_mmap()\n\nManual manipulation of vma->vm_file and file reference counts in\nfuse_backing_mmap() is error-prone.\n\nUse the vma_set_file() helper instead, which correctly handles the\nswapping of the file reference and ensures proper reference counting\nduring VMA setup.\n\nBug: 498749316\nChange-Id: I22ba0618f9fde6b698aeeeff2005830c4392969c\nSigned-off-by: Sandeep Dhavale <dhavale@google.com>\n(cherry picked from commit 517040c192cebb334766f43604e6a7ebb79d43ae)\nSigned-off-by: Lee Jones <joneslee@google.com>"
+    }
+  ],
+  "files": [
+    {
+      "path": "arch/arm64/include/asm/kvm_arm.h",
+      "sha": "c96d9504ce4be6ce26ec552e28c4652b86a80b7f",
+      "status": "modified",
+      "patch": "@@ -87,7 +87,7 @@\n \t\t\t HCR_AMO | HCR_SWIO | HCR_TIDCP | HCR_RW | HCR_TLOR | \\\n \t\t\t HCR_FMO | HCR_IMO | HCR_PTW | HCR_TID3 )\n #define HCR_VIRT_EXCP_MASK (HCR_VSE | HCR_VI | HCR_VF)\n-#define HCR_HOST_NVHE_FLAGS (HCR_RW | HCR_API | HCR_APK | HCR_ATA)\n+#define HCR_HOST_NVHE_FLAGS (HCR_RW | HCR_API | HCR_APK)\n #define HCR_HOST_NVHE_PROTECTED_FLAGS (HCR_HOST_NVHE_FLAGS | HCR_TSC)\n #define HCR_HOST_VHE_FLAGS (HCR_RW | HCR_TGE | HCR_E2H)\n "
+    },
+    {
+      "path": "arch/arm64/kernel/head.S",
+      "sha": "cf67828ec1789eef4b21f91cf77f8a50f63676a2",
+      "status": "modified",
+      "patch": "@@ -506,7 +506,7 @@ SYM_INNER_LABEL(init_el1, SYM_L_LOCAL)\n \teret\n \n SYM_INNER_LABEL(init_el2, SYM_L_LOCAL)\n-\tmov_q\tx0, HCR_HOST_NVHE_FLAGS\n+\tmov_q\tx0, HCR_HOST_NVHE_FLAGS | HCR_ATA\n \tmsr\thcr_el2, x0\n \tisb\n "
+    },
+    {
+      "path": "arch/arm64/kvm/arm.c",
+      "sha": "fa9465b0202ae24c76601acb83cdd3bb928d154e",
+      "status": "modified",
+      "patch": "@@ -1732,6 +1732,10 @@ static void cpu_prepare_hyp_mode(int cpu)\n \t\tparams->hcr_el2 = HCR_HOST_NVHE_PROTECTED_FLAGS;\n \telse\n \t\tparams->hcr_el2 = HCR_HOST_NVHE_FLAGS;\n+\n+\tif (system_supports_mte())\n+\t\tparams->hcr_el2 |= HCR_ATA;\n+\n \tparams->vttbr = params->vtcr = 0;\n \tparams->hfgwtr_el2 = HFGxTR_EL2_nSMPRI_EL1_MASK | HFGxTR_EL2_nTPIDR2_EL0_MASK;\n "
+    },
+    {
+      "path": "arch/arm64/kvm/hyp/include/hyp/switch.h",
+      "sha": "839ac8aa8bf24e668da34e86a77d84375a45b242",
+      "status": "modified",
+      "patch": "@@ -135,6 +135,9 @@ static inline void ___activate_traps(struct kvm_vcpu *vcpu)\n \tif (cpus_have_final_cap(ARM64_WORKAROUND_CAVIUM_TX2_219_TVM))\n \t\thcr |= HCR_TVM;\n \n+\tif (!system_supports_mte())\n+\t\thcr &= ~(HCR_DCT | HCR_ATA);\n+\n \twrite_sysreg(hcr, hcr_el2);\n \n \tif (cpus_have_final_cap(ARM64_HAS_RAS_EXTN) && (hcr & HCR_VSE))"
+    },
+    {
+      "path": "drivers/hid/hid-logitech-dj.c",
+      "sha": "c38c8c361d047e751c5bf2e1e3a4b62db8f9a3dd",
+      "status": "modified",
+      "patch": "@@ -1746,7 +1746,8 @@ static int logi_dj_raw_event(struct hid_device *hdev,\n static int logi_dj_probe(struct hid_device *hdev,\n \t\t\t const struct hid_device_id *id)\n {\n-\tstruct hid_report_enum *rep_enum;\n+\tstruct hid_report_enum *input_report_enum;\n+\tstruct hid_report_enum *output_report_enum;\n \tstruct hid_report *rep;\n \tstruct dj_receiver_dev *djrcv_dev;\n \tstruct usb_interface *intf;\n@@ -1790,18 +1791,28 @@ static int logi_dj_probe(struct hid_device *hdev,\n \t\t}\n \t}\n \n-\trep_enum = &hdev->report_enum[HID_INPUT_REPORT];\n+\toutput_report_enum = &hdev->report_enum[HID_OUTPUT_REPORT];\n+\trep = output_report_enum->report_id_hash[REPORT_ID_DJ_SHORT];\n+\n+\tif (rep && (rep->maxfield < 1 ||\n+\t\t    rep->field[0]->report_count != DJREPORT_SHORT_LENGTH - 1)) {\n+\t\thid_err(hdev, \"Expected size of DJ short report is %d, but got %d\",\n+\t\t\tDJREPORT_SHORT_LENGTH - 1, rep->field[0]->report_count);\n+\t\treturn -EINVAL;\n+\t}\n+\n+\tinput_report_enum = &hdev->report_enum[HID_INPUT_REPORT];\n \n \t/* no input reports, bail out */\n-\tif (list_empty(&rep_enum->report_list))\n+\tif (list_empty(&input_report_enum->report_list))\n \t\treturn -ENODEV;\n \n \t/*\n \t * Check for the HID++ application.\n \t * Note: we should theoretically check for HID++ and DJ\n \t * collections, but this will do.\n \t */\n-\tlist_for_each_entry(rep, &rep_enum->report_list, list) {\n+\tlist_for_each_entry(rep, &input_report_enum->report_list, list) {\n \t\tif (rep->application == 0xff000001)\n \t\t\thas_hidpp = true;\n \t}\n@@ -1814,15 +1825,15 @@ static int logi_dj_probe(struct hid_device *hdev,\n \t\treturn -ENODEV;\n \n \t/* get the current application attached to the node */\n-\trep = list_first_entry(&rep_enum->report_list, struct hid_report, list);\n+\trep = list_first_entry(&input_report_enum->report_list, struct hid_report, list);\n \tdjrcv_dev = dj_get_receiver_dev(hdev, id->driver_data,\n \t\t\t\t\trep->application, has_hidpp);\n \tif (!djrcv_dev) {\n \t\thid_err(hdev, \"%s: dj_get_receiver_dev failed\\n\", __func__);\n \t\treturn -ENOMEM;\n \t}\n \n-\tif (!rep_enum->numbered)\n+\tif (!input_report_enum->numbered)\n \t\tdjrcv_dev->unnumbered_application = rep->application;\n \n \t/* Starts the usb device and connects to upper interfaces hiddev and"
+    },
+    {
+      "path": "drivers/hid/hid-logitech-hidpp.c",
+      "sha": "fe81bff108b894f07545016409c1a557fdc33b5f",
+      "status": "modified",
+      "patch": "@@ -4272,10 +4272,12 @@ static int hidpp_probe(struct hid_device *hdev, const struct hid_device_id *id)\n \n \tif (hidpp->quirks & HIDPP_QUIRK_CLASS_G920) {\n \t\tret = hidpp_ff_init(hidpp, &data);\n-\t\tif (ret)\n+\t\tif (ret) {\n \t\t\thid_warn(hidpp->hid_dev,\n \t\t     \"Unable to initialize force feedback support, errno %d\\n\",\n \t\t\t\t ret);\n+\t\t\tret = 0;\n+\t\t}\n \t}\n \n \t/*"
+    },
+    {
+      "path": "fs/fuse/backing.c",
+      "sha": "dc8b0266c325c8339f816ebceef3046a1a95acbc",
+      "status": "modified",
+      "patch": "@@ -1014,14 +1014,10 @@ ssize_t fuse_backing_mmap(struct file *file, struct vm_area_struct *vma)\n \tif (WARN_ON(file != vma->vm_file))\n \t\treturn -EIO;\n \n-\tvma->vm_file = get_file(backing_file);\n-\n+\tvma_set_file(vma, backing_file);\n \tret = call_mmap(vma->vm_file, vma);\n-\n \tif (ret)\n-\t\tfput(backing_file);\n-\telse\n-\t\tfput(file);\n+\t\treturn ret;\n \n \tif (file->f_flags & O_NOATIME)\n \t\treturn ret;"
+    },
+    {
+      "path": "include/linux/pgsize_migration.h",
+      "sha": "46aad958bd3274e8c84675322b8b5dd19c047501",
+      "status": "modified",
+      "patch": "@@ -16,6 +16,12 @@\n #include <linux/pgsize_migration_inline.h>\n #include <linux/seq_file.h>\n #include <linux/mm.h>\n+#include <linux/printk.h>\n+#include <linux/sched.h>\n+\n+#define pgmigration_err(fmt, ...) \\\n+\tpr_err(\"page size migration: [%i (%s)] %s:%d: \" fmt, \\\n+\t\ttask_pid_nr(current), current->comm, __func__, __LINE__, ## __VA_ARGS__)\n \n #if PAGE_SIZE == SZ_4K && defined(CONFIG_64BIT)\n extern void vma_set_pad_pages(struct vm_area_struct *vma,"
+    },
+    {
+      "path": "mm/mmap.c",
+      "sha": "43d87c5cffd7fc72463682d427dff4b5dbc81901",
+      "status": "modified",
+      "patch": "@@ -3479,6 +3479,8 @@ struct vm_area_struct *copy_vma(struct vm_area_struct **vmap,\n \t\tnew_vma = vm_area_dup(vma);\n \t\tif (!new_vma)\n \t\t\tgoto out;\n+\t\t/* Do not preserve padding flags on the new VMA */\n+\t\tvm_flags_clear(new_vma, VM_PAD_MASK);\n \t\tnew_vma->vm_start = addr;\n \t\tnew_vma->vm_end = addr + len;\n \t\tnew_vma->vm_pgoff = pgoff;"
+    },
+    {
+      "path": "mm/pgsize_migration.c",
+      "sha": "c9ab0f50277ce48de50459e558f49c17216e7650",
+      "status": "modified",
+      "patch": "@@ -137,10 +137,23 @@ void vma_set_pad_pages(struct vm_area_struct *vma,\n \n unsigned long vma_pad_pages(struct vm_area_struct *vma)\n {\n+\tint nr_pages;\n+\tint nr_pad;\n+\n \tif (!is_pgsize_migration_enabled())\n \t\treturn 0;\n \n-\treturn (vma->vm_flags & VM_PAD_MASK) >> VM_PAD_SHIFT;\n+\tnr_pad = (vma->vm_flags & VM_PAD_MASK) >> VM_PAD_SHIFT;\n+\tif (!nr_pad)\n+\t\treturn 0;\n+\n+\tnr_pages = vma_pages(vma);\n+\n+\t/* There must be at least 1 data page in the VMA */\n+\tif (WARN_ON(nr_pad >= nr_pages))\n+\t\treturn 0;\n+\n+\treturn nr_pad;\n }\n \n static __always_inline bool str_has_suffix(const char *str, const char *suffix)\n@@ -197,15 +210,23 @@ static inline bool linker_ctx(void)\n \t\tmemset(buf, 0, bufsize);\n \t\tpath = d_path(&file->f_path, buf, bufsize);\n \n+\t\tif (IS_ERR(path)) {\n+\t\t\tpgmigration_err(\"Unable to parse filepath\");\n+\t\t\treturn false;\n+\t\t}\n+\n \t\t/*\n \t\t * Depending on interpreter requested, valid paths could be any of:\n \t\t *   1. /system/bin/bootstrap/linker64\n \t\t *   2. /system/bin/linker64\n \t\t *   3. /apex/com.android.runtime/bin/linker64\n \t\t *\n-\t\t * Check the base name (linker64).\n+\t\t * Check against absolute paths to ensure the dynamic loader\n+\t\t * context is correctly identified.\n \t\t */\n-\t\tif (!strcmp(kbasename(path), \"linker64\"))\n+\t\tif (!strcmp(path, \"/system/bin/bootstrap/linker64\") ||\n+\t\t    !strcmp(path, \"/system/bin/linker64\") ||\n+\t\t    !strcmp(path, \"/apex/com.android.runtime/bin/linker64\"))\n \t\t\treturn true;\n \t}\n \n@@ -241,6 +262,14 @@ void madvise_vma_pad_pages(struct vm_area_struct *vma,\n \tif (start <= vma->vm_start || end != vma->vm_end)\n \t\treturn;\n \n+\t/*\n+\t * The only valid usecase is for madvising MAP_PRIVATE ELF mappings.\n+\t */\n+\tif (vma->vm_flags & VM_SHARED) {\n+\t\tpgmigration_err(\"Invalid attempt to madvise padding on MAP_SHARED vma\");\n+\t\treturn;\n+\t}\n+\n \tnr_pad_pages = (end - start) >> PAGE_SHIFT;\n \n \tif (!nr_pad_pages || nr_pad_pages > VM_TOTAL_PAD_PAGES)"
+    },
+    {
+      "path": "net/unix/garbage.c",
+      "sha": "eb4a57379b682fa1c1c63b157626fd1a9c99bc94",
+      "status": "modified",
+      "patch": "@@ -136,6 +136,7 @@ enum unix_vertex_index {\n };\n \n static unsigned long unix_vertex_unvisited_index = UNIX_VERTEX_INDEX_MARK1;\n+static unsigned long unix_vertex_max_scc_index = UNIX_VERTEX_INDEX_START;\n \n static void unix_add_edge(struct scm_fp_list *fpl, struct unix_edge *edge)\n {\n@@ -144,6 +145,7 @@ static void unix_add_edge(struct scm_fp_list *fpl, struct unix_edge *edge)\n \tif (!vertex) {\n \t\tvertex = list_first_entry(&fpl->vertices, typeof(*vertex), entry);\n \t\tvertex->index = unix_vertex_unvisited_index;\n+\t\tvertex->scc_index = ++unix_vertex_max_scc_index;\n \t\tvertex->out_degree = 0;\n \t\tINIT_LIST_HEAD(&vertex->edges);\n \t\tINIT_LIST_HEAD(&vertex->scc_entry);\n@@ -498,10 +500,15 @@ static void __unix_walk_scc(struct unix_vertex *vertex, unsigned long *last_inde\n \t\t\t\tscc_dead = unix_vertex_dead(v);\n \t\t}\n \n-\t\tif (scc_dead)\n+\t\tif (scc_dead) {\n \t\t\tunix_collect_skb(&scc, hitlist);\n-\t\telse if (!unix_graph_maybe_cyclic)\n-\t\t\tunix_graph_maybe_cyclic = unix_scc_cyclic(&scc);\n+\t\t} else {\n+\t\t\tif (unix_vertex_max_scc_index < vertex->scc_index)\n+\t\t\t\tunix_vertex_max_scc_index = vertex->scc_index;\n+\n+\t\t\tif (!unix_graph_maybe_cyclic)\n+\t\t\t\tunix_graph_maybe_cyclic = unix_scc_cyclic(&scc);\n+\t\t}\n \n \t\tlist_del(&scc);\n \t}\n@@ -516,6 +523,7 @@ static void unix_walk_scc(struct sk_buff_head *hitlist)\n \tunsigned long last_index = UNIX_VERTEX_INDEX_START;\n \n \tunix_graph_maybe_cyclic = false;\n+\tunix_vertex_max_scc_index = UNIX_VERTEX_INDEX_START;\n \n \t/* Visit every vertex exactly once.\n \t * __unix_walk_scc() moves visited vertices to unix_visited_vertices."
+    }
+  ],
+  "url": "https://github.com/aosp-mirror-neo/kernel_common/compare/0c3d559bcd85c64dae9c9c9687abbe5347fff3ad...23d7c6efa1683634931690f4df06f025bdcc20d1"
+}

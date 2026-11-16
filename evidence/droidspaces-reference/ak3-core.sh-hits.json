@@ -1,0 +1,422 @@
+[
+  {
+    "line": 67,
+    "text": "split_boot() {"
+  },
+  {
+    "line": 82,
+    "text": "    dd if=$BLOCK of=$BOOTIMG $CUSTOMDD;"
+  },
+  {
+    "line": 113,
+    "text": "    dd bs=$(($(printf '%d\\n' 0x$(hexdump -n 4 -s 12 -e '16/1 \"%02x\"\"\\n\"' $BOOTIMG)) + 64)) count=1 conv=notrunc if=$BOOTIMG of=boot-trimmed.img;"
+  },
+  {
+    "line": 129,
+    "text": "    dd bs=4096 skip=8 iflag=skip_bytes conv=notrunc if=$BOOTIMG of=ramdisk.cpio.gz;"
+  },
+  {
+    "line": 131,
+    "text": "    (set -o pipefail; magiskboot unpack -h $BOOTIMG 2>&1 | tee infotmp >&2);"
+  },
+  {
+    "line": 145,
+    "text": "unpack_ramdisk() {"
+  },
+  {
+    "line": 152,
+    "text": "      dd bs=512 skip=1 conv=notrunc if=ramdisk.cpio.gz-mtk of=ramdisk.cpio.gz;"
+  },
+  {
+    "line": 158,
+    "text": "    comp=$(magiskboot decompress ramdisk.cpio 2>&1 | grep -v 'raw' | sed -n 's;.*\\[\\(.*\\)\\];\\1;p');"
+  },
+  {
+    "line": 164,
+    "text": "    magiskboot decompress ramdisk.cpio.$comp ramdisk.cpio;"
+  },
+  {
+    "line": 193,
+    "text": "repack_ramdisk() {"
+  },
+  {
+    "line": 221,
+    "text": "    magiskboot cpio ramdisk-new.cpio test;"
+  },
+  {
+    "line": 222,
+    "text": "    magisk_patched=$?;"
+  },
+  {
+    "line": 224,
+    "text": "  [ \"$magisk_patched\" -eq 1 ] && magiskboot cpio ramdisk-new.cpio \"extract .backup/.magisk $SPLITIMG/.magisk\";"
+  },
+  {
+    "line": 226,
+    "text": "    magiskboot compress=$comp ramdisk-new.cpio;"
+  },
+  {
+    "line": 247,
+    "text": "flash_boot() {"
+  },
+  {
+    "line": 285,
+    "text": "  for fdt in dt recovery_dtbo dtb; do"
+  },
+  {
+    "line": 320,
+    "text": "    for i in dtb recovery_dtbo; do"
+  },
+  {
+    "line": 325,
+    "text": "        if [ ! \"$magisk_patched\" -a ! \"$NO_MAGISK_CHECK\" ]; then"
+  },
+  {
+    "line": 326,
+    "text": "          magiskboot cpio ramdisk.cpio test;"
+  },
+  {
+    "line": 327,
+    "text": "          magisk_patched=$?;"
+  },
+  {
+    "line": 329,
+    "text": "        if [ \"$magisk_patched\" -eq 1 ]; then"
+  },
+  {
+    "line": 331,
+    "text": "          comp=$(magiskboot decompress kernel 2>&1 | grep -vE 'raw|zimage' | sed -n 's;.*\\[\\(.*\\)\\];\\1;p');"
+  },
+  {
+    "line": 332,
+    "text": "          (magiskboot split $kernel || magiskboot decompress $kernel kernel) 2>/dev/null;"
+  },
+  {
+    "line": 338,
+    "text": "          magiskboot hexpatch kernel 736B69705F696E697472616D6673 77616E745F696E697472616D6673;"
+  },
+  {
+    "line": 343,
+    "text": "            magiskboot compress=$comp kernel kernel.$comp;"
+  },
+  {
+    "line": 350,
+    "text": "          [ ! -f .magisk ] && magiskboot cpio ramdisk.cpio \"extract .backup/.magisk .magisk\";"
+  },
+  {
+    "line": 351,
+    "text": "          export $(cat .magisk);"
+  },
+  {
+    "line": 352,
+    "text": "          for fdt in dtb extra kernel_dtb recovery_dtbo; do"
+  },
+  {
+    "line": 353,
+    "text": "            [ -f $fdt ] && magiskboot dtb $fdt patch; # remove dtb verity/avb"
+  },
+  {
+    "line": 357,
+    "text": "          comp=$(magiskboot decompress kernel 2>&1 | grep -vE 'raw|zimage' | sed -n 's;.*\\[\\(.*\\)\\];\\1;p');"
+  },
+  {
+    "line": 358,
+    "text": "          (magiskboot split $kernel || magiskboot decompress $kernel kernel) 2>/dev/null;"
+  },
+  {
+    "line": 373,
+    "text": "            magiskboot compress=$comp kernel kernel.$comp;"
+  },
+  {
+    "line": 385,
+    "text": "        unset magisk_patched KEEPVERITY KEEPFORCEENCRYPT RECOVERYMODE PREINITDEVICE SHA1 RANDOMSEED; # leave PATCHVBMETAFLAG set for repack"
+  },
+  {
+    "line": 396,
+    "text": "    magiskboot repack $nocompflag $BOOTIMG $AKHOME/boot-new.img;"
+  },
+  {
+    "line": 402,
+    "text": "  [ -f .magisk ] && touch $AKHOME/magisk_patched;"
+  },
+  {
+    "line": 425,
+    "text": "      if magiskboot verify boot.img; then"
+  },
+  {
+    "line": 427,
+    "text": "        magiskboot sign /$avbtype boot-new.img $cert $pk8;"
+  },
+  {
+    "line": 441,
+    "text": "  blockdev --setrw $BLOCK 2>/dev/null;"
+  },
+  {
+    "line": 446,
+    "text": "    dd if=/dev/zero of=$BLOCK $CUSTOMDD 2>/dev/null;"
+  },
+  {
+    "line": 447,
+    "text": "    dd if=boot-new.img of=$BLOCK $CUSTOMDD;"
+  },
+  {
+    "line": 484,
+    "text": "      avb=$(httools_static avb $1);"
+  },
+  {
+    "line": 487,
+    "text": "        flags=$(httools_static disable-flags);"
+  },
+  {
+    "line": 488,
+    "text": "        [ $? == 0 ] || abort \"Failed to parse top-level vbmeta. Aborting...\";"
+  },
+  {
+    "line": 500,
+    "text": "          httools_static patch $1 $AKHOME/$img $avbblock || abort \"Failed to patch $1 on $avb. Aborting...\";"
+  },
+  {
+    "line": 507,
+    "text": "          echo \"Resizing $1$SLOT snapshot...\" >&2;"
+  },
+  {
+    "line": 508,
+    "text": "          snapshotupdater_static update $1 $imgsz || abort \"Resizing $1$SLOT snapshot failed. Aborting...\";"
+  },
+  {
+    "line": 511,
+    "text": "          lptools_static remove $1_ak3;"
+  },
+  {
+    "line": 513,
+    "text": "          lptools_static clear-cow;"
+  },
+  {
+    "line": 515,
+    "text": "          if lptools_static create $1_ak3 $imgsz; then"
+  },
+  {
+    "line": 517,
+    "text": "            lptools_static unmap $1_ak3 || abort \"Unmapping $1_ak3 failed. Aborting...\";"
+  },
+  {
+    "line": 518,
+    "text": "            lptools_static map $1_ak3 || abort \"Mapping $1_ak3 failed. Aborting...\";"
+  },
+  {
+    "line": 519,
+    "text": "            lptools_static replace $1_ak3 $1$SLOT || abort \"Replacing $1$SLOT failed. Aborting...\";"
+  },
+  {
+    "line": 524,
+    "text": "            httools_static umount $1 || abort \"Unmounting $1 failed. Aborting...\";"
+  },
+  {
+    "line": 526,
+    "text": "              lptools_static unmap $1-verity || abort \"Unmapping $1-verity failed. Aborting...\";"
+  },
+  {
+    "line": 528,
+    "text": "            lptools_static unmap $1$SLOT || abort \"Unmapping $1$SLOT failed. Aborting...\";"
+  },
+  {
+    "line": 529,
+    "text": "            lptools_static resize $1$SLOT $imgsz || abort \"Resizing $1$SLOT failed. Aborting...\";"
+  },
+  {
+    "line": 530,
+    "text": "            lptools_static map $1$SLOT || abort \"Mapping $1$SLOT failed. Aborting...\";"
+  },
+  {
+    "line": 538,
+    "text": "    isro=$(blockdev --getro $imgblock 2>/dev/null);"
+  },
+  {
+    "line": 539,
+    "text": "    blockdev --setrw $imgblock 2>/dev/null;"
+  },
+  {
+    "line": 544,
+    "text": "      dd if=/dev/zero of=$imgblock 2>/dev/null;"
+  },
+  {
+    "line": 545,
+    "text": "      dd if=$img of=$imgblock;"
+  },
+  {
+    "line": 553,
+    "text": "      blockdev --setro $imgblock 2>/dev/null;"
+  },
+  {
+    "line": 556,
+    "text": "      httools_static mount $1 || abort \"Mounting $1 failed. Aborting...\";"
+  },
+  {
+    "line": 562,
+    "text": "# flash_dtbo (backwards compatibility for flash_generic)"
+  },
+  {
+    "line": 563,
+    "text": "flash_dtbo() { flash_generic dtbo; }"
+  },
+  {
+    "line": 565,
+    "text": "### write_boot (repack ramdisk then build, sign and write image, vendor_dlkm and dtbo)"
+  },
+  {
+    "line": 566,
+    "text": "write_boot() {"
+  },
+  {
+    "line": 569,
+    "text": "  flash_generic vendor_boot; # temporary until hdr v4 can be unpacked/repacked fully by magiskboot"
+  },
+  {
+    "line": 570,
+    "text": "  flash_generic vendor_kernel_boot; # temporary until hdr v4 can be unpacked/repacked fully by magiskboot"
+  },
+  {
+    "line": 573,
+    "text": "  flash_generic dtbo;"
+  },
+  {
+    "line": 811,
+    "text": "setup_ak() {"
+  },
+  {
+    "line": 816,
+    "text": "  [ \"$is_slot_device\" ] && IS_SLOT_DEVICE=\"$is_slot_device\";"
+  },
+  {
+    "line": 818,
+    "text": "  [ \"$patch_vbmeta_flag\" ] && PATCH_VBMETA_FLAG=\"$patch_vbmeta_flag\";"
+  },
+  {
+    "line": 820,
+    "text": "  [ \"$slot_select\" ] && SLOT_SELECT=\"$slot_select\";"
+  },
+  {
+    "line": 822,
+    "text": "  [ \"$no_magisk_check\" ] && NO_MAGISK_CHECK=\"$no_magisk_check\";"
+  },
+  {
+    "line": 823,
+    "text": "  unset block is_slot_device ramdisk_compression patch_vbmeta_flag customdd slot_select no_block_display no_magisk_check;"
+  },
+  {
+    "line": 825,
+    "text": "  # slot detection enabled by IS_SLOT_DEVICE=1 or auto (from anykernel.sh)"
+  },
+  {
+    "line": 828,
+    "text": "      SLOT=$(getprop ro.boot.slot_suffix 2>/dev/null);"
+  },
+  {
+    "line": 829,
+    "text": "      [ \"$SLOT\" ] || SLOT=$(grep -o 'androidboot.slot_suffix=.*$' /proc/cmdline | cut -d\\  -f1 | cut -d= -f2);"
+  },
+  {
+    "line": 831,
+    "text": "        SLOT=$(getprop ro.boot.slot 2>/dev/null);"
+  },
+  {
+    "line": 832,
+    "text": "        [ \"$SLOT\" ] || SLOT=$(grep -o 'androidboot.slot=.*$' /proc/cmdline | cut -d\\  -f1 | cut -d= -f2);"
+  },
+  {
+    "line": 850,
+    "text": "        abort \"Unable to determine active slot. Aborting...\";"
+  },
+  {
+    "line": 860,
+    "text": "  # automate simple multi-partition setup for hdr_v4 boot + init_boot + vendor_kernel_boot (for dtb only until magiskboot supports hdr v4 vendor_ramdisk unpack/repack)"
+  },
+  {
+    "line": 861,
+    "text": "  if [ -e \"/dev/block/bootdevice/by-name/init_boot$SLOT\" -a ! -f init_v4_setup ] && [ -f dtb -o -d vendor_ramdisk -o -d vendor_patch ]; then"
+  },
+  {
+    "line": 862,
+    "text": "    echo \"Setting up for simple automatic init_boot flashing...\" >&2;"
+  },
+  {
+    "line": 865,
+    "text": "    mkdir init_boot-files;"
+  },
+  {
+    "line": 866,
+    "text": "    mv -f ramdisk patch init_boot-files;"
+  },
+  {
+    "line": 872,
+    "text": "  # automate simple multi-partition setup for hdr_v3+ boot + vendor_boot with dtb/dlkm (for v3 only until magiskboot supports hdr v4 vendor_ramdisk unpack/repack)"
+  },
+  {
+    "line": 873,
+    "text": "  elif [ -e \"/dev/block/bootdevice/by-name/vendor_boot$SLOT\" -a ! -f vendor_v3_setup ] && [ -f dtb -o -d vendor_ramdisk -o -d vendor_patch ]; then"
+  },
+  {
+    "line": 874,
+    "text": "    echo \"Setting up for simple automatic vendor_boot flashing...\" >&2;"
+  },
+  {
+    "line": 877,
+    "text": "    mkdir vendor_boot-files;"
+  },
+  {
+    "line": 878,
+    "text": "    mv -f dtb vendor_boot-files;"
+  },
+  {
+    "line": 879,
+    "text": "    mv -f vendor_ramdisk vendor_boot-files/ramdisk;"
+  },
+  {
+    "line": 880,
+    "text": "    mv -f vendor_patch vendor_boot-files/patch) 2>/dev/null;"
+  },
+  {
+    "line": 894,
+    "text": "      # maintain brief lists of historic matching partition type names for boot, recovery and init_boot/ramdisk"
+  },
+  {
+    "line": 897,
+    "text": "      plistinit=\"init_boot ramdisk\";"
+  },
+  {
+    "line": 902,
+    "text": "        init_boot|ramdisk) parttype=$plistinit;;"
+  },
+  {
+    "line": 967,
+    "text": "  # Attempt 2: compressed kernel \u922b\ufffd magiskboot decompress then strings"
+  },
+  {
+    "line": 970,
+    "text": "    magiskboot decompress \"$target\" \"$tmpfile\" 2>/dev/null"
+  },
+  {
+    "line": 1008,
+    "text": "do_check_boot_version() {"
+  },
+  {
+    "line": 1011,
+    "text": "  # BYPASS: do.check_boot_version=0 in anykernel.sh skips check"
+  },
+  {
+    "line": 1012,
+    "text": "  if [ \"$(file_getprop anykernel.sh do.check_boot_version)\" != 1 ]; then"
+  },
+  {
+    "line": 1013,
+    "text": "    ui_print \"  -> [BYPASS] do.check_boot_version=0: version check SKIPPED.\""
+  },
+  {
+    "line": 1026,
+    "text": "  # Version from device boot partition (target slot, direct read via $BLOCK)"
+  },
+  {
+    "line": 1058,
+    "text": "do_check_boot_version;"
+  }
+]

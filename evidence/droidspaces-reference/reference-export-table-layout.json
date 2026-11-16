@@ -1,0 +1,10 @@
+{
+  "image_sha256": "9943c5a1a7cba7e9e6a8243831e986f4003856902371a5d94c146d19601f563c",
+  "normal_start": 23727568,
+  "normal_end": 23766532,
+  "gpl_start": 23766532,
+  "gpl_end": 23825308,
+  "normal_count": 3247,
+  "gpl_count": 4898,
+  "crc_gpl_start": 23838296
+}

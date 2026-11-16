@@ -1,0 +1,69 @@
+{
+  "method": "Phase 4 PREL32 parser, independently cross-checked on candidate ELF/Module.symvers in Phase 4; no reference ELF/Module.symvers available. Partial raw-table comparison, not ABI acceptance.",
+  "reference_export_count": 8145,
+  "comparisons": {
+    "stock": {
+      "common": 8142,
+      "same_crc": 8138,
+      "crc_differences": [
+        {
+          "symbol": "__page_file_index",
+          "reference": "39ba4984",
+          "stock": "12d686c5"
+        },
+        {
+          "symbol": "add_swap_extent",
+          "reference": "2a731aba",
+          "stock": "3da4a325"
+        },
+        {
+          "symbol": "page_swap_info",
+          "reference": "b7074429",
+          "stock": "138a96b6"
+        },
+        {
+          "symbol": "unuse_swap_pte",
+          "reference": "440b776b",
+          "stock": "2dd1c10f"
+        }
+      ],
+      "missing_from_reference": [],
+      "extra_in_reference": [
+        "from_kuid",
+        "from_kuid_munged",
+        "make_kuid"
+      ]
+    },
+    "candidate": {
+      "common": 8142,
+      "same_crc": 8142,
+      "crc_differences": [],
+      "missing_from_reference": [],
+      "extra_in_reference": [
+        "from_kuid",
+        "from_kuid_munged",
+        "make_kuid"
+      ]
+    }
+  },
+  "stock_module_crc_conflict_variants": [
+    {
+      "name": "cifs",
+      "sha256": "694d665f4a19208600b132c7a5ecdc9fc1305ce330d79abbea81513fbfdd5116",
+      "file": "lib/modules/cifs.ko",
+      "mismatches": [
+        {
+          "symbol": "__page_file_index",
+          "module": "12d686c5",
+          "reference": "39ba4984"
+        },
+        {
+          "symbol": "add_swap_extent",
+          "module": "3da4a325",
+          "reference": "2a731aba"
+        }
+      ]
+    }
+  ],
+  "note": "Module imports absent from vmlinux can be provided by other modules; absence alone is not an unresolved-symbol verdict."
+}

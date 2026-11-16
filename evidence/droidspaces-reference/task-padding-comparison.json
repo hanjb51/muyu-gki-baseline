@@ -1,0 +1,143 @@
+{
+  "stock_bytes": 4800,
+  "reference_bytes": 4800,
+  "reference_members_near_padding": [
+    {
+      "name": "kretprobe_instances",
+      "type": 1553,
+      "bit_offset": 28736,
+      "bitfield_size": 0,
+      "type_label": "4:llist_head"
+    },
+    {
+      "name": "",
+      "type": 983,
+      "bit_offset": 28800,
+      "bitfield_size": 0,
+      "type_label": "5{8:saved_state@0/0:1:unsigned int,@0/0:4{8:android_kabi_reserved1@0/0:8:u64},@0/0:5{0:}}"
+    },
+    {
+      "name": "android_kabi_reserved2",
+      "type": 25,
+      "bit_offset": 28864,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "android_kabi_reserved3",
+      "type": 25,
+      "bit_offset": 28928,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "android_kabi_reserved4",
+      "type": 25,
+      "bit_offset": 28992,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "android_kabi_reserved5",
+      "type": 25,
+      "bit_offset": 29056,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "",
+      "type": 985,
+      "bit_offset": 29120,
+      "bitfield_size": 0,
+      "type_label": "5{8:sysvsem@0/0:4:sysv_sem,@0/0:4{8:android_kabi_reserved6@0/0:8:u64},@0/0:5{0:}}"
+    },
+    {
+      "name": "",
+      "type": 987,
+      "bit_offset": 29184,
+      "bitfield_size": 0,
+      "type_label": "5{16:sysvshm@0/0:4:sysv_shm,@0/0:4{16:android_kabi_reserved7@0/0:8:u64,android_kabi_reserved8@64/0:8:u64},@0/0:5{0:}}"
+    },
+    {
+      "name": "thread",
+      "type": 1558,
+      "bit_offset": 29312,
+      "bitfield_size": 0,
+      "type_label": "4:thread_struct"
+    }
+  ],
+  "stock_members_near_padding": [
+    {
+      "name": "kretprobe_instances",
+      "type": 1549,
+      "bit_offset": 28736,
+      "bitfield_size": 0,
+      "type_label": "4:llist_head"
+    },
+    {
+      "name": "",
+      "type": 983,
+      "bit_offset": 28800,
+      "bitfield_size": 0,
+      "type_label": "5{8:saved_state@0/0:1:unsigned int,@0/0:4{8:android_kabi_reserved1@0/0:8:u64},@0/0:5{0:}}"
+    },
+    {
+      "name": "android_kabi_reserved2",
+      "type": 25,
+      "bit_offset": 28864,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "android_kabi_reserved3",
+      "type": 25,
+      "bit_offset": 28928,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "android_kabi_reserved4",
+      "type": 25,
+      "bit_offset": 28992,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "android_kabi_reserved5",
+      "type": 25,
+      "bit_offset": 29056,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "android_kabi_reserved6",
+      "type": 25,
+      "bit_offset": 29120,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "android_kabi_reserved7",
+      "type": 25,
+      "bit_offset": 29184,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "android_kabi_reserved8",
+      "type": 25,
+      "bit_offset": 29248,
+      "bitfield_size": 0,
+      "type_label": "8:u64"
+    },
+    {
+      "name": "thread",
+      "type": 1551,
+      "bit_offset": 29312,
+      "bitfield_size": 0,
+      "type_label": "4:thread_struct"
+    }
+  ],
+  "named_nonreserve_field_differences": [],
+  "limitation": "Anonymous union contents and vendor use of padding still require source/semantic audit."
+}

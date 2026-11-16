@@ -1,0 +1,87 @@
+{
+  "repositories": [
+    {
+      "repo": "Goldzxcbug/Droidspaces-kernel",
+      "sha": "3a7177a67b563833c03a2035edf10077a50caf24",
+      "tree": "1617ef059c3503217dec83d310129d1d849cad75",
+      "date": "2026-07-27T16:44:29Z",
+      "message": "删除旧内核文件并添加新版本内核文件"
+    },
+    {
+      "repo": "Goldzxcbug/Droidspaces_Kernel_patch",
+      "sha": "dc0f76bedd790b7738e5695509297ee71ca4a2c2",
+      "tree": "9a3d0af9c4be17ead3a33ed5c6c7497db673eb76",
+      "date": "2026-11-02T06:46:48Z",
+      "message": "添加 5.10.272 cgroup 限制 KMI 兼容补丁\n\n提取并合并小米 Pad 6 Max 内核的 cgroup 控制器和 CFS 带宽补丁，保留来源、适用基线及配置要求。"
+    },
+    {
+      "repo": "zzh20188/GKI_KernelSU_SUSFS",
+      "sha": "95a5710108ff16941ddecc50264737b13b0e5d07",
+      "tree": "1bc09e6d09215a4bda72f8cce1e5aa83f5e06104",
+      "date": "2026-11-06T19:06:23Z",
+      "message": "fix: add missing KSU_SUSFS_PRIORITY_UID_FILTER Kconfig for SukiSU builtin\n\nUpstream susfs4ksu (2026-11-02, \"Make priority_uid_filter as new feature\")\nguards the declarations and definitions of susfs_set_priority_uid_filter()\nand susfs_parse_priority_app_strings() behind CONFIG_KSU_SUSFS_PRIORITY_UID_FILTER,\nwhich is introduced by 10_enable_susfs_for_ksu.patch. SukiSU builtin does not\napply that patch and its Kconfig lacks the option, yet it calls both helpers\nunconditionally, so every SukiSU SUSFS build fails with implicit declarations.\n\nAppend the upstream Kconfig entry when the KSU source uses these helpers and\nthe option is missing, and enable it in the SUSFS defconfig fragment."
+    }
+  ],
+  "droidspaces": {
+    "repo": "ravindu644/Droidspaces-OSS",
+    "sha": "cdadb9eb5d0f86aacffff60776333e6f6b73a30a",
+    "tree": "8720dc5cf1265b407a626d2cfa6947d8d0897234"
+  },
+  "systemd": {
+    "repo": "systemd/systemd",
+    "sha": "7386493f3b3658e5cac075a4df7280e6ff4371d7",
+    "tree": "ed97e297b0da7ced8d76ab360e482303e8f23fba"
+  },
+  "local_zip_git_blob_sha": "5fa9eedce93abb0435d36c81ffc8e5c4882f9e4f",
+  "remote_zip": {
+    "path": "GKI内核/AnyKernel3_Resukisu_gki_6.1.138_coolapk@爱你么么哒qcjl哟.zip",
+    "mode": "100644",
+    "type": "blob",
+    "sha": "5fa9eedce93abb0435d36c81ffc8e5c4882f9e4f",
+    "size": 18039097,
+    "url": "https://api.github.com/repos/Goldzxcbug/Droidspaces-kernel/git/blobs/5fa9eedce93abb0435d36c81ffc8e5c4882f9e4f"
+  },
+  "zip_git_blob_matches": true,
+  "missing_567": {
+    "history": {
+      "content": "[]",
+      "title": "commits",
+      "modified_date": null,
+      "url": "https://api.github.com/repos/ravindu644/Droidspaces-OSS/commits?sha=cdadb9eb5d0f86aacffff60776333e6f6b73a30a&path=Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_5_6_7.patch&per_page=5",
+      "display_url": "https://api.github.com/repos/ravindu644/Droidspaces-OSS/commits?sha=cdadb9eb5d0f86aacffff60776333e6f6b73a30a&path=Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_5_6_7.patch&per_page=5",
+      "display_title": "commits",
+      "structuredContent": {
+        "title": "commits",
+        "content": "[]",
+        "display_url": "https://api.github.com/repos/ravindu644/Droidspaces-OSS/commits?sha=cdadb9eb5d0f86aacffff60776333e6f6b73a30a&path=Documentation/resources/kernel-patches/GKI/below-kernel-6.12/001.GKI-below-6.12-fix_sysvipc_kabi_5_6_7.patch&per_page=5"
+      }
+    },
+    "search": {
+      "content": "{\"total_count\":0,\"incomplete_results\":false,\"items\":[]}",
+      "title": "code",
+      "modified_date": null,
+      "url": "https://api.github.com/search/code?q=%22sysvipc_kabi_5_6_7%22&per_page=10",
+      "display_url": "https://api.github.com/search/code?q=%22sysvipc_kabi_5_6_7%22&per_page=10",
+      "display_title": "code",
+      "structuredContent": {
+        "title": "code",
+        "content": "{\"total_count\":0,\"incomplete_results\":false,\"items\":[]}",
+        "display_url": "https://api.github.com/search/code?q=%22sysvipc_kabi_5_6_7%22&per_page=10"
+      }
+    }
+  },
+  "failed_fetches": [
+    {
+      "repo": "aosp-mirror-neo/kernel_common",
+      "ref": "0c3d559bcd85c64dae9c9c9687abbe5347fff3ad",
+      "path": "ipc/Kconfig",
+      "error": "GitHub API error 404: {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}",
+      "error_code": "NOT_FOUND",
+      "error_data": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest/repos/contents#get-repository-content",
+        "status": "404"
+      }
+    }
+  ]
+}

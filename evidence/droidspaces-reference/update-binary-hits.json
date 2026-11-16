@@ -1,0 +1,82 @@
+[
+  {
+    "line": 36,
+    "text": "find_slot() {"
+  },
+  {
+    "line": 37,
+    "text": "  local slot=$(getprop ro.boot.slot_suffix 2>/dev/null);"
+  },
+  {
+    "line": 38,
+    "text": "  [ \"$slot\" ] || slot=$(grep -o 'androidboot.slot_suffix=.*$' /proc/cmdline | cut -d\\  -f1 | cut -d= -f2);"
+  },
+  {
+    "line": 39,
+    "text": "  if [ ! \"$slot\" ]; then"
+  },
+  {
+    "line": 40,
+    "text": "    slot=$(getprop ro.boot.slot 2>/dev/null);"
+  },
+  {
+    "line": 41,
+    "text": "    [ \"$slot\" ] || slot=$(grep -o 'androidboot.slot=.*$' /proc/cmdline | cut -d\\  -f1 | cut -d= -f2);"
+  },
+  {
+    "line": 42,
+    "text": "    [ \"$slot\" ] && slot=_$slot;"
+  },
+  {
+    "line": 44,
+    "text": "  [ \"$slot\" == \"normal\" ] && unset slot;"
+  },
+  {
+    "line": 45,
+    "text": "  [ \"$slot\" ] && echo \"$slot\";"
+  },
+  {
+    "line": 125,
+    "text": "  local byname mount slot system;"
+  },
+  {
+    "line": 130,
+    "text": "  [ -e /dev/block/$byname/system ] || slot=$(find_slot);"
+  },
+  {
+    "line": 157,
+    "text": "        mount -o ro -t auto /dev/block/$byname/system$slot /system_root && echo \"/system_root (direct)\" >&2;"
+  },
+  {
+    "line": 166,
+    "text": "      mount -o ro -t auto /dev/block/$byname$mount$slot $mount && echo \"$mount (direct)\" >&2;"
+  },
+  {
+    "line": 292,
+    "text": "do_devicecheck() {"
+  },
+  {
+    "line": 293,
+    "text": "  [ \"$(file_getprop anykernel.sh do.devicecheck)\" == 1 ] || return 1;"
+  },
+  {
+    "line": 419,
+    "text": "  local block modcon moddir modtarget module mount slot umask umountksu;"
+  },
+  {
+    "line": 427,
+    "text": "    if [ -d /data/adb/magisk -a -f $AKHOME/magisk_patched ] || [ -d /data/data/me.weishu.kernelsu -a -f $AKHOME/kernelsu_patched ]; then"
+  },
+  {
+    "line": 480,
+    "text": "        for slot in \"\" _a _b; do"
+  },
+  {
+    "line": 481,
+    "text": "          blockdev --setrw /dev/block/mapper/$block$slot 2>/dev/null;"
+  },
+  {
+    "line": 560,
+    "text": "do_devicecheck;"
+  }
+]
